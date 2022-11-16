@@ -15,3 +15,8 @@ Voor mijn inividueel project ga ik een webapplicatie maken die producten voor ee
   - De gebruiker moet een duidelijk overzicht hebben van zijn producten en wanneer hij/zij deze weer moet inleveren. Zodat hij/zij precies weet welk product hij/zij nog heeft en het product ook weer gereserveerd kan worden als hij/zij dit product niet meer.
   - De gebruiker moet kunnen aangeven of hij/zij het product heeft. Ook als hij/zij deze niet had gereserveerd. Zodat dit product nooit kwijtraakt.
   - Alleen gebruikers met de rol van ‘admin’ kunnen producten toevoegen. Zodat de database onder controle blijft.
+
+### Leerdoelen
+
+#### Web application
+Ik heb voor mijn inividueel project een full stack webapp gemaakt. Voor de frontend heb ik gebruik gemaakt van Vue.js en voor de backend heb ik gebruik gemaakt van Java Spring. Voor de communicatie tussen de client en de server gebruik ik axios.
