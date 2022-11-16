@@ -20,3 +20,9 @@ Voor mijn inividueel project ga ik een webapplicatie maken die producten voor ee
 
 #### Web application
 Ik heb voor mijn inividueel project een full stack webapp gemaakt. Voor de frontend heb ik gebruik gemaakt van Vue.js en voor de backend heb ik gebruik gemaakt van Java Spring. Voor de communicatie tussen de client en de server gebruik ik axios.
+![image](https://user-images.githubusercontent.com/113592556/202159213-cdf4cafe-fc5f-46ef-8abe-a10606581785.png)
+
+In de afbeelding kunt u zien dat ik gebruik maakt van een authorization header. Deze header is gevult met een bearer token. Door deze header moet er voordat het werkelijke request gerunt kan worden een preflight request gedaan worden. Hierdoor zien de communicatie er zo uit:
+![image](https://user-images.githubusercontent.com/113592556/202164303-264ccd7b-bf6c-429a-8956-da0b1f07e553.png)
+
+
