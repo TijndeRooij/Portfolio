@@ -11,7 +11,7 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
   - Leeruitkomsten
       - [Web application *IP*](https://github.com/TijndeRooij/Portfolio/edit/main/IP.md#web-application)
       - [Software quality]
-      - [Agile method]
+      - [Agile method *GP*](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#agile-method)
       - [CI/CD]
       - [Cultural differences and ethics]
       - [Requirements and design]
