@@ -9,7 +9,7 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
       - [User stories](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#user-stories)
       
   - Leeruitkomsten
-      - [Web application]
+      - [Web application *IP*](https://github.com/TijndeRooij/Portfolio/edit/main/IP.md#web-application)
       - [Software quality]
       - [Agile method]
       - [CI/CD]
