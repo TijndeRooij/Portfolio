@@ -17,7 +17,7 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
       - [Requirements and design]
       - [Business processes]
       - [Professional]
-  
+     
   - Onderzoeken
       - [Hoe maak ik een veilige login?]
       - [Hoe maak ik een goede UI/UX?]
