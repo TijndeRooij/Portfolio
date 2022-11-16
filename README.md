@@ -4,8 +4,9 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
 ## Index
 
   - [Individueel project](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md)
-      - [Project omschrijving]
-      - [User stories]
+      - [Project omschrijving](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md)
+      - [Keuze omschrijving](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#keuzes)
+      - [User stories](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#userstories)
       
   - Leeruitkomsten
       - [Web application]
