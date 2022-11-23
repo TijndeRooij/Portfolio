@@ -6,6 +6,7 @@ Voor mijn inividueel project ga ik een webapplicatie maken die producten voor ee
   - Vue.js. Voor de frontend heb ik gekozen om Vue.js te gebruiken. Ik heb deze keuze gemaakt omdat ik nog nooit met een dergelijk framework heb gewerkt en dit het meeste leek op HTML/CSS waar ik al wel bekend mee was.
   - Java Spring. Voor de backend heb ik gekozen om Java Spring te gebruiken. Ik wilde de taal java al wat langer leren. Daarom heb ik voor deze taal gekozen. Ik gebruik het spring framework omdat hier het meest over te vinden is. Ik had nog nooit met java gewerkt daarom leekt het mij slim om een framework te kiezen waar veel over te vinden is.
   - MYSQL. Voor de database heb ik gebruik gemaakt van een MYSQL database. Als oorspronkelijke keuze wilde ik MongoDB gebruiken, maar na heel lang proberen lukte het mij niet om deze database te koppelen aan Intellij. Daarnaast wordt de data in MonogDB niet makkelijk opgeslagen voor mijn app, aangezien ik rationele data gebruik.
+  - JWT. Voor de Authorizatie en Authenticatie heb ik gekozen voor JWT tokens. Ik heb deze keuze gemaakt omdat ik nog nooit iets met authorizatie/authenicatie had gedaan en er over JWT tokens het meest te vinden was. Ook hebben de meeste klasgenoten van mij gekozen voor JWT tokens. Dit is makkelijk omdat ik nu overal terecht kan als ik vast loop.
 
 ### User stories
 
