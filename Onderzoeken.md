@@ -18,5 +18,5 @@ Single factor authenticatie is een authenticatie waarin de gebruiker alleen zijn
 Multifactor authenticatie is een authenticatie waarbij de gebruiker naast zijn gebruikersnaam en wachtwoord ook nog op een andere manier moet bewijzen dat hij geen hacker is. Een bekend voorbeeld hiervan is pinnen. Je moet je bankpas laten zien (Iets wat de gebruiker heeft) en je moet je pincode invullen (Iets wat de gebruiker weet). De laatste is hierdoor veiliger.  
 
 ## Hoe werkt het?
-Het beveiligen van een app kan op veel verschillende manieren, zo worden er bijvoorbeeld verschillende services aangeboden zoals Auth0. 
+Het beveiligen van een app kan op veel verschillende manieren, zo worden er bijvoorbeeld verschillende services aangeboden zoals Auth0. Auth0 is een service die het maken van SSO (Single Sign On) gemakkelijk maakt. Single Sign On is ook een manier van inloggen. Bij SSO kan je op verschillende platformen met hetzelfde account inloggen, een voorbeeld hiervan is als je langs de inlogkeuzes ook nog de keuze hebt om met google in te loggen. Als je dit doet maak je gebruik van je google account en dus van SSO.
 
