@@ -21,7 +21,7 @@ Multifactor authenticatie is een authenticatie waarbij de gebruiker naast zijn g
 
 Bronnen: [delinea](https://delinea.com/blog/sfa-mfa-difference), [studiocdn](https://studiocdn.com/faq/what-is-two-factor-authentication/?gclid=Cj0KCQiA99ybBhD9ARIsALvZavVxycugjDb0dBqchP3yF4AOxEHdkS29I-0IGOrTqq1gKIzGSwC3Q6caAhZPEALw_wcB)
 
-## Hoe werkt het?
+## Services
 Het beveiligen van een app kan op veel verschillende manieren, zo worden er bijvoorbeeld verschillende services aangeboden zoals [Auth0](https://auth0.com/). Auth0 is een service die het maken van SSO (Single Sign On) gemakkelijk maakt. Single Sign On is ook een manier van inloggen. Bij SSO kan je op verschillende platformen met hetzelfde account inloggen, een voorbeeld hiervan is als je langs de inlogkeuzes ook nog de keuze hebt om met google in te loggen. Als je dit doet maak je gebruik van je google account en dus van SSO.
 
 Bronnen: [Auth0](https://auth0.com/)
@@ -34,9 +34,17 @@ Het veilig maken van een authenticatie gebeurt meestal met tokens. De meest beke
 - PASETO
 Hieronder ziet u de specificaties van alle bovenstaande tokens.
 ![image](https://user-images.githubusercontent.com/113592556/203552268-e82caf83-6ff4-43ce-ba7a-2ebcccc1e00f.png)<br />
-<sub>Source: [scottbrady91](https://www.scottbrady91.com/jose/alternatives-to-jwts#alternatives)</sub>
+<sub>Bron: [scottbrady91](https://www.scottbrady91.com/jose/alternatives-to-jwts#alternatives)</sub>
 
 Bronnen: [scottbrady91](https://www.scottbrady91.com/jose/alternatives-to-jwts#alternatives)
 
 ## JWT
-Ikzelf heb gekozen voor JWT tokens. 
+Ikzelf heb gekozen voor JWT tokens. Een JWT token is opgedeeld in 3 stukken: een header, een payload en een signature. Deze stukken worden opgesplitst doormiddel van punten. 
+De header bestaat meestal uit 2 delen. Dit is het type token en het signing algoritme. Het signing algoritme is het algoritme dat gebruikt gaat worden in het laatste deel van het token. Bekende voorbeelden van signing algoritmes zijn: HMAC SHA256 en RSA. Een header ziet er meestal zo uit:<br />
+![image](https://user-images.githubusercontent.com/113592556/203557071-bee7e9d5-cc27-4291-ae52-5943c4b82c7b.png)<br />
+<sub>Bron: [jwt.io](https://jwt.io/introduction)</sub>
+
+De payload bestaat uit de verschillende claims. Deze claims kunnen worden opgesplitst in 3 types: registered, public, and private claims.
+Registered claims zijn claims die niet verplicht zijn. 
+Bronnen: [jwt.io](https://jwt.io/introduction)
+
