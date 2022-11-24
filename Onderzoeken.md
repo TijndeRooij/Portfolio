@@ -40,11 +40,22 @@ Bronnen: [scottbrady91](https://www.scottbrady91.com/jose/alternatives-to-jwts#a
 
 ## JWT
 Ikzelf heb gekozen voor JWT tokens. Een JWT token is opgedeeld in 3 stukken: een header, een payload en een signature. Deze stukken worden opgesplitst doormiddel van punten. 
+
+### Onderdelen van een JWT
 De header bestaat meestal uit 2 delen. Dit is het type token en het signing algoritme. Het signing algoritme is het algoritme dat gebruikt gaat worden in het laatste deel van het token. Bekende voorbeelden van signing algoritmes zijn: HMAC SHA256 en RSA. Een header ziet er meestal zo uit:<br />
 ![image](https://user-images.githubusercontent.com/113592556/203557071-bee7e9d5-cc27-4291-ae52-5943c4b82c7b.png)<br />
 <sub>Bron: [jwt.io](https://jwt.io/introduction)</sub>
 
 De payload bestaat uit de verschillende claims. Deze claims kunnen worden opgesplitst in 3 types: registered, public, and private claims.
-Registered claims zijn claims die niet verplicht zijn. 
-Bronnen: [jwt.io](https://jwt.io/introduction)
+Registered claims zijn claims die niet verplicht zijn maar wel worden aangeraden. Dit zijn de claims zoals de issuer of de expiration time. Hieronder staat een foto van mijn eigen code met deze registered claims. <br />
+![image](https://user-images.githubusercontent.com/113592556/203789125-26274f7a-ca8b-448e-bcf9-9f40858a0a40.png)<br />
+<sub>Code snippet.</sub><br />
+
+Het is ook mogelijk om public claims te gebruiken. Dit zijn claims die je zelf public kan maken. Om ervoor te zorgen dat alles goed verloopt zullen deze claims ergens opgeslagen moeten staan. De meest gebruikte lijst hiervoor is de [IANA JSON Web Token Claims Registry](https://www.iana.org/assignments/jwt/jwt.xhtml#claims). Deze lijst is gevult met alle claims die je kan doen in een jwt token.<br />
+De laaste claim die je kunt uitvoren zijn de private claims. Dit zijn claims die niet registered of public claims zijn. Het grootste verschil tussen een private en een public claim is dat er bij een private claim wel iets mis kan gaan. Daarom moeten deze altijd met beleid worden gebruikt.<br />
+
+### Access token
+Een access token is een token 
+
+Bronnen: [jwt.io](https://jwt.io/introduction), [rfc-editor](https://www.rfc-editor.org/rfc/rfc7519#section-4.2), [iana](https://www.iana.org/assignments/jwt/jwt.xhtml#claims)
 
