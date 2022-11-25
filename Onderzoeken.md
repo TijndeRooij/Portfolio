@@ -31,7 +31,8 @@ Het veilig maken van een authenticatie gebeurt meestal met tokens. De meest beke
 - JWT (JSON Web Token)
 - Branca
 - Fernet
-- PASETO
+- PASETO<br />
+
 Hieronder ziet u de specificaties van alle bovenstaande tokens.
 ![image](https://user-images.githubusercontent.com/113592556/203552268-e82caf83-6ff4-43ce-ba7a-2ebcccc1e00f.png)<br />
 <sub>Bron: [scottbrady91](https://www.scottbrady91.com/jose/alternatives-to-jwts#alternatives)</sub>
@@ -55,7 +56,20 @@ Het is ook mogelijk om public claims te gebruiken. Dit zijn claims die je zelf p
 De laaste claim die je kunt uitvoren zijn de private claims. Dit zijn claims die niet registered of public claims zijn. Het grootste verschil tussen een private en een public claim is dat er bij een private claim wel iets mis kan gaan. Daarom moeten deze altijd met beleid worden gebruikt.<br />
 
 ### Access token
-Een access token is een token 
+Een access token is een JWT token die gebruikt wordt om overal binnen te komen. Dit token wordt samen met een refresh token meegeleverd als de gebruiker zichzelf succesvol inlogt. Een access token wordt als een header in een request meegeleverd. Deze header is de AUTHENTICAION header. Deze header wordt niet zomaar als '*authorized*' gezien. Dit houdt in dat deze header niet zomaar gebruikt kan worden. Zie *<strong>[request](https://github.com/TijndeRooij/Portfolio/edit/main/Onderzoeken.md#request)</strong>* voor verdere uitleg. Zodra de AUTHORIZATION header als '*authorized*' wordt gezien kan een access token in deze header gezet worden. Dit gebeurt meestal door "Bearer " voor het token te zetten. Een access token ziet er als volgt uit: 
+<br />
+|![image](https://user-images.githubusercontent.com/113592556/203945493-06f92fae-2045-486c-8cf5-9aee9da51b34.png)|
+|:--:|
+<sub>Access token</sub>
 
-Bronnen: [jwt.io](https://jwt.io/introduction), [rfc-editor](https://www.rfc-editor.org/rfc/rfc7519#section-4.2), [iana](https://www.iana.org/assignments/jwt/jwt.xhtml#claims)
+Zoals je hierboven kunt zien wordt het token opgespitst door punten. Het eerst deel is de header, het tweede deel is de payload en het derde deel is het signing algoritme. Zie <strong>[onderdelen van JWT](https://github.com/TijndeRooij/Portfolio/edit/main/Onderzoeken.md#onderdelen-van-een-jwt)</strong>.
+Het doel van een access token is om de gebruiker zijn requests te laten doen. Zonder access token kan de gebruiker deze requests dus niet doen. Je krijgt een access token alleen als je bent ingelogt. Dit maakt je applicatie dus heel veilig.
+
+### Refresh token
+Een refresh token wordt samen met een access token meegelevert als de gebuiker successvol inlogt. Het doel van een refresh token is dat de gebruiker zonder opnieuw in te hoeven loggen een nieuwe access token kan krijgen. Om de applicatie nog veiliger te maken heeft een access token namelijk maar een bepaade tijd dat deze gebruikt kan worden. Als deze tijd afloopt kan een access token niet meer gebruikt worden. Zonder dat de gebruiker dit door heeft wordt er dan een refresh token naar de backend gestuurd. Deze refresh token laat de applicatie een nieuwe access token maken en deze wordt vervolgens weer gebruikt als normaal. Een refresh token kan ook aflopen na een bepaalde tijd. Als dit gebeurt moet de gebruiker wel opniew inloggen.
+
+Bronnen: [jwt.io](https://jwt.io/introduction), [rfc-editor](https://www.rfc-editor.org/rfc/rfc7519#section-4.2), [iana](https://www.iana.org/assignments/jwt/jwt.xhtml#claims), [Amigoscode](https://youtu.be/VVn9OG9nfH0)
+
+## Request
+
 
