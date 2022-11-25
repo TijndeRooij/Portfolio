@@ -22,9 +22,11 @@ Multifactor authenticatie is een authenticatie waarbij de gebruiker naast zijn g
 Bronnen: [delinea](https://delinea.com/blog/sfa-mfa-difference), [studiocdn](https://studiocdn.com/faq/what-is-two-factor-authentication/?gclid=Cj0KCQiA99ybBhD9ARIsALvZavVxycugjDb0dBqchP3yF4AOxEHdkS29I-0IGOrTqq1gKIzGSwC3Q6caAhZPEALw_wcB)
 
 ## Services
-Het beveiligen van een app kan op veel verschillende manieren, zo worden er bijvoorbeeld verschillende services aangeboden zoals [Auth0](https://auth0.com/). Auth0 is een service die het maken van SSO (Single Sign On) gemakkelijk maakt. Single Sign On is ook een manier van inloggen. Bij SSO kan je op verschillende platformen met hetzelfde account inloggen, een voorbeeld hiervan is als je langs de inlogkeuzes ook nog de keuze hebt om met google in te loggen. Als je dit doet maak je gebruik van je google account en dus van SSO.
+Het beveiligen van een app kan op veel verschillende manieren, zo worden er bijvoorbeeld verschillende services aangeboden zoals [Auth0](https://auth0.com/). Auth0 is een service die naast het inloggen ook het maken van SSO (Single Sign On) gemakkelijk maakt. Single Sign On is ook een manier van inloggen. Bij SSO kan je op verschillende platformen met hetzelfde account inloggen. SSO is zo gemakkelijk in Auth0 omdat Auth0 gebruik maakt van het [OpenID connect protocol](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol).<br />
+OpenID connect (OIDC) is een protocol wat het maken ven SSO gemakelijk maakt. Het Auth0 framework houdt zich vooral bezig met het inloggen van een gebruiker en OIDC met SSO. Omdat Auth0 OIDC gebruikt om SSO ook gemakkelijk te maken en is Auth0 een goede service om te gebuiken in uw applicatie.<br />
+Naast Auth0 is ook [Amazon Cognito](https://aws.amazon.com/cognito/) een goede service. Ook Amazon Cognito maakt gebruik van het OIDC protocol en dit maakt ook Amazon Cognitio goed voor SSO. Om te kiezen tussen Auth0 en Amazon Cognito is daarom ook lastig. Niet alleen voor SSO maar ook voor inlog services. Het grootste verschil is dat Amazon Cognito vaak duurder is als je de goede support wil voor OIDC.
 
-Bronnen: [Auth0](https://auth0.com/)
+Bronnen: [Auth0](https://auth0.com/), [OpenID Connect](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol), [brocoders](https://brocoders.com/blog/auth0-vs-cognito/), [Amazon Cognito](https://aws.amazon.com/cognito/)
 
 ## Tokens
 Het veilig maken van een authenticatie gebeurt meestal met tokens. De meest bekende tokens zijn: 
@@ -69,3 +71,7 @@ Het doel van een access token is om de gebruiker zijn requests te laten doen. Zo
 Een refresh token wordt samen met een access token meegelevert als de gebuiker successvol inlogt. Het doel van een refresh token is dat de gebruiker zonder opnieuw in te hoeven loggen een nieuwe access token kan krijgen. Om de applicatie nog veiliger te maken heeft een access token namelijk maar een bepaade tijd dat deze gebruikt kan worden. Als deze tijd afloopt kan een access token niet meer gebruikt worden. Zonder dat de gebruiker dit door heeft wordt er dan een refresh token naar de backend gestuurd. Deze refresh token laat de applicatie een nieuwe access token maken en deze wordt vervolgens weer gebruikt als normaal. Een refresh token kan ook aflopen na een bepaalde tijd. Als dit gebeurt moet de gebruiker wel opniew inloggen.
 
 Bronnen: [jwt.io](https://jwt.io/introduction), [rfc-editor](https://www.rfc-editor.org/rfc/rfc7519#section-4.2), [iana](https://www.iana.org/assignments/jwt/jwt.xhtml#claims), [Amigoscode](https://youtu.be/VVn9OG9nfH0)
+
+## Conclusie
+In conclusie is het maken van een goede beveiliging voor uw applicatie geen gemakkelijke opgaven. Er zijn heel veel verschillende keuzes die de uitkomst drastisch kunnen veranderen. Ikzelf heb een authenticatie handmatig gemaakt met gebruik van JWT tokens. Dit is heel leerzaam maar dit heeft mij wel heel veel werk gekost. Als je wat minder tijd hebt zou ik daarom kiezen om een service te gebruiken. Welke service ligt aan de applicatie die u maakt. Ikzelf zou voor Auth0 kiezen.<br />
+Als u wel wat meer tijd hebt zou ik zelf een authenticatie proberen te maken. Dit zal uiteraard minder veilig zijn dan een service maar dit is wel heel leerzaam. Als token zou ik dan kiezen voor JWT tokens.
