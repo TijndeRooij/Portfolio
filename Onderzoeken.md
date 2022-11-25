@@ -56,7 +56,7 @@ Het is ook mogelijk om public claims te gebruiken. Dit zijn claims die je zelf p
 De laaste claim die je kunt uitvoren zijn de private claims. Dit zijn claims die niet registered of public claims zijn. Het grootste verschil tussen een private en een public claim is dat er bij een private claim wel iets mis kan gaan. Daarom moeten deze altijd met beleid worden gebruikt.<br />
 
 ### Access token
-Een access token is een JWT token die gebruikt wordt om overal binnen te komen. Dit token wordt samen met een refresh token meegeleverd als de gebruiker zichzelf succesvol inlogt. Een access token wordt als een header in een request meegeleverd. Deze header is de AUTHENTICAION header. Deze header wordt niet zomaar als '*authorized*' gezien. Dit houdt in dat deze header niet zomaar gebruikt kan worden. Zie *<strong>[request](https://github.com/TijndeRooij/Portfolio/edit/main/Onderzoeken.md#request)</strong>* voor verdere uitleg. Zodra de AUTHORIZATION header als '*authorized*' wordt gezien kan een access token in deze header gezet worden. Dit gebeurt meestal door "Bearer " voor het token te zetten. Een access token ziet er als volgt uit: 
+Een access token is een JWT token die gebruikt wordt om overal binnen te komen. Dit token wordt samen met een refresh token meegeleverd als de gebruiker zichzelf succesvol inlogt. Een access token wordt als een header in een request meegeleverd. Deze header is de AUTHENTICAION header. Deze header wordt niet zomaar als '*authorized*' gezien. Dit houdt in dat deze header niet zomaar gebruikt kan worden. Dit komt omdat er voordat het echte request gedaan wordt een preflight request gedaan word. Hierin wordt gekenen of alle headers authorized meegeleverd kunnen worden. Je moet dus in de backend handmatig zeggen dat de AUTHORIZATION header wel meelgeleverd mag worden. Dit maakt deze header authorized Zodra de AUTHORIZATION header als '*authorized*' wordt gezien kan een access token in deze header gezet worden. Dit gebeurt meestal door "Bearer " voor het token te zetten. Een access token ziet er als volgt uit: 
 <br />
 |![image](https://user-images.githubusercontent.com/113592556/203945493-06f92fae-2045-486c-8cf5-9aee9da51b34.png)|
 |:--:|
@@ -69,7 +69,3 @@ Het doel van een access token is om de gebruiker zijn requests te laten doen. Zo
 Een refresh token wordt samen met een access token meegelevert als de gebuiker successvol inlogt. Het doel van een refresh token is dat de gebruiker zonder opnieuw in te hoeven loggen een nieuwe access token kan krijgen. Om de applicatie nog veiliger te maken heeft een access token namelijk maar een bepaade tijd dat deze gebruikt kan worden. Als deze tijd afloopt kan een access token niet meer gebruikt worden. Zonder dat de gebruiker dit door heeft wordt er dan een refresh token naar de backend gestuurd. Deze refresh token laat de applicatie een nieuwe access token maken en deze wordt vervolgens weer gebruikt als normaal. Een refresh token kan ook aflopen na een bepaalde tijd. Als dit gebeurt moet de gebruiker wel opniew inloggen.
 
 Bronnen: [jwt.io](https://jwt.io/introduction), [rfc-editor](https://www.rfc-editor.org/rfc/rfc7519#section-4.2), [iana](https://www.iana.org/assignments/jwt/jwt.xhtml#claims), [Amigoscode](https://youtu.be/VVn9OG9nfH0)
-
-## Request
-
-
