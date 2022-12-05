@@ -19,5 +19,5 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
       - [Professional]
      
   - Onderzoeken
-      - [Hoe maak ik een veilige login?]
+      - [Hoe maak ik een veilige login?](https://github.com/TijndeRooij/Portfolio/blob/main/Onderzoeken.md#wat-is-een-goede-manier-om-je-applicatie-te-beveiligen)
       - [Hoe maak ik een goede UI/UX?]
