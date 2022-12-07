@@ -17,7 +17,7 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
       - [Software quality]
       - [Agile method *GP*](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#agile-method)
       - [CI/CD]
-      - [Cultural differences and ethics]
+      - [Cultural differences and ethics *GP*](https://github.com/TijndeRooij/Portfolio/edit/main/GP.md#cultural-differences)
       - [Requirements and design]
       - [Business processes]
       - [Professional]
