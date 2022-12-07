@@ -40,7 +40,10 @@ Deze 4 ondedelen gaan van klein naar groot. Bijvoobeeld: De Atoms is een vrijsta
 Ik heb voor mijn inividueel project een full stack webapp gemaakt. Voor de frontend heb ik gebruik gemaakt van Vue.js en voor de backend heb ik gebruik gemaakt van Java Spring. Ik heb in mijn individueel project wat minder de focus gelegt op het maken van een mooie frontend maar meer op het maken van een goed lopende backend. Voor de communicatie tussen de client en de server gebruik ik in mijn individueel project axios. <br />
 ![image](https://user-images.githubusercontent.com/113592556/202159213-cdf4cafe-fc5f-46ef-8abe-a10606581785.png)
 
-In de afbeelding hierboven kunt u zien dat ik gebruik maakt van een authorization header. Deze header is gevult met een bearer token. Door deze header moet er voordat het werkelijke request gerunt kan worden een preflight request gedaan worden. Hierdoor zien de communicatie er zo uit:
-![image](https://user-images.githubusercontent.com/113592556/202164303-264ccd7b-bf6c-429a-8956-da0b1f07e553.png)
+In de afbeelding hierboven kunt u zien dat ik gebruik maakt van een authorization header. Deze header is gevult met een bearer token. Dankzij deze header moet er voordat het werkelijke request gerunt kan worden een preflight request gedaan worden. Hierdoor zien de communicatie er zo uit: <br />
+<img src="https://user-images.githubusercontent.com/113592556/202164303-264ccd7b-bf6c-429a-8956-da0b1f07e553.png" width="200" height="300" />
 
+#### Backend
+Voor de backend van mijn individueel project heb ik gebruik gemaakt van Java Spring. Dit is een java framework wat het maken van webapplicatie makkelijker maakt. De opbouw van de backend is als volgt: 
+  - Het request wat vanuit de frontend wordt verstuurd komt binnen in de Authorization filter. Hierin wordt het echte request onderscheiden van het prefligt request en de JWT token gedecrypt. Het wordt hier gecrypt omdat in deze classe ook de rollen de JWT token worden gehaald. Meer info over tokens en authorization zie het [onderzoek over inloggen]().
 
