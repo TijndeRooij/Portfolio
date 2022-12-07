@@ -11,7 +11,7 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
   - Leeruitkomsten
       - [Web application *IP*](https://github.com/TijndeRooij/Portfolio/edit/main/IP.md#web-application)
         - [Frontend *GP*](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#frontend)
-        - [Communicatie tussen Front en Backend](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#frontend)
+        - [Communicatie tussen Front en Backend](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#communicatie-met-backend)
         - [Backend](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#backend)
         - [Database](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#database)
       - [Software quality]
