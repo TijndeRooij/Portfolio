@@ -45,5 +45,14 @@ In de afbeelding hierboven kunt u zien dat ik gebruik maakt van een authorizatio
 
 #### Backend
 Voor de backend van mijn individueel project heb ik gebruik gemaakt van Java Spring. Dit is een java framework wat het maken van webapplicatie makkelijker maakt. De opbouw van de backend is als volgt: 
-  - Het request wat vanuit de frontend wordt verstuurd komt binnen in de Authorization filter. Hierin wordt het echte request onderscheiden van het prefligt request en de JWT token gedecrypt. Het wordt hier gecrypt omdat in deze classe ook de rollen de JWT token worden gehaald. Meer info over tokens en authorization zie het [onderzoek over inloggen]().
+  - Het request wat vanuit de frontend wordt verstuurd komt binnen in de Authorization filter. Hierin wordt het echte request onderscheiden van het prefligt request en de JWT token gedecrypt. Het wordt hier gecrypt omdat in deze classe ook de rollen uit het JWT token worden gehaald. Voor meer info over tokens en authorization zie het [onderzoek over inloggen](https://github.com/TijndeRooij/Portfolio/blob/main/Onderzoeken.md#wat-is-een-goede-manier-om-je-applicatie-te-beveiligen). Hieronder ziet u de Authorization filter: <br />
+![image](https://user-images.githubusercontent.com/113592556/206147899-edb58aba-fa05-44ec-b88e-30ab0fa31f6d.png)
+  - Na de Authorization filter gaat het request door naar de controllers. De controllers roepen de serviceclasses aan en die classes zorgen er samen met de models voor dat het correcte uit de database wordt gehaalt, toegevoegt, verandert of verwijdert. Vervolgens wordt dit weer naar de controllers verstuurd en die zorgen dat er bij een get request json formated producten worden terug gegeven en bij de andere requests een statuscode wordt meegegeven. Hieronder ziet u een foto van een put (update) en een get request: <br />
+![image](https://user-images.githubusercontent.com/113592556/206152476-bfb5f025-f4f8-47c6-a0ca-6c70ab4f4b23.png)
+
+#### Database
+Voor de database in mijn individueel project heb ik gekozen voor een MYSQL database. Deze heb ik op phpmyadmin runnen. Ik run phpmyadmin zelf in docker:<br />
+![image](https://user-images.githubusercontent.com/113592556/206154659-09e5f0f5-93b9-442e-b005-4ddd63e51272.png)
+In mijn database staan mijn users, products en rollen opgeslagen. Tussen Users en Rollen zit een koppeltabel die bijhoud welke rollen een user heeft. In mijn user tabel staat ook het password opgeslagen. Deze staat encrypted in de database.
+
 
