@@ -62,6 +62,10 @@ Clarification:
 Tooling and methodology: Carry out, monitor and report on unit integration, regression and system tests, with attention for security and performance aspects, as well as applying static code analysis and code reviews.
 
 ### CI/CD
+
+#### CI
+Ik heb in mijn Intellij project een dockerfile en een dockercompose file gemaakt. De dockerfile is verantwoordelijk voor het opbouwen van de docker image. Deze image wordt gerunt in een container. In mijn dockercompose file worden alle images aangemaakt. Dit zijn er meerdere. Ik run namelijk ook mijn SQL en PHPMYADMIN in docker. Ik heb hiervoor gekozen omdat ik dacht dat ze op deze manier makkelijker met elkaar konden communiceren.
+
 You design and implement a (semi)automated software release process that matches the needs of the project context.
 
 Clarification:
