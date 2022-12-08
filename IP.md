@@ -55,4 +55,28 @@ Voor de database in mijn individueel project heb ik gekozen voor een MYSQL datab
 ![image](https://user-images.githubusercontent.com/113592556/206154659-09e5f0f5-93b9-442e-b005-4ddd63e51272.png)
 In mijn database staan mijn users, products en rollen opgeslagen. Tussen Users en Rollen zit een koppeltabel die bijhoud welke rollen een user heeft. In mijn user tabel staat ook het password opgeslagen. Deze staat encrypted in de database.
 
+### Software quality
+You use software tooling and methodology that continuously monitors and improve the software quality during software development.
+
+Clarification:
+Tooling and methodology: Carry out, monitor and report on unit integration, regression and system tests, with attention for security and performance aspects, as well as applying static code analysis and code reviews.
+
+### CI/CD
+You design and implement a (semi)automated software release process that matches the needs of the project context.
+
+Clarification:
+Design and implement: You design a release process and implement a continuous integration and deployment solution (using e.g. Gitlab CI and Docker).
+
+### Business processes
+You analyze and describe simple business processes that are related to your project.
+
+Clarification:
+Simple: Involving stakeholders, predominantly sequential processes with one or two alternative paths.
+
+Related: Business processes during which the software that you are developing will be used (business processes that the software must support by fully or partially automating them). 
+
+or
+
+Business processes needed for the success of your software development project (e.g., product release, market release, financial assurance).
+
 
