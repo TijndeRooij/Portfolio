@@ -38,6 +38,20 @@ Ik heb in mijn IDI ook een test gemaakt over dit onderwerp. Hier werd ik bekend 
 <br />
 
 ### Requirements and design
+You analyze (non-functional) requirements, elaborate (architectural) designs and validate them using multiple types of test techniques.
 
+Clarification:
+Multiple types of test techniques: You apply user acceptance testing and stakeholder feedback to validate the quality of the requirements. You evaluate the quality of the design (e.g., by testing or prototyping) taking into account the formulated quality properties like security and performance.
+
+### Professional
+You act in a professional manner during software development and learning.
+
+Clarification:
+Professional manner: 
+
+You develop software as a team effort according to a prescribed software methodology and following team agreements. You are able to track your work progress and communicate your progress with the team.
+
+You actively ask and apply feedback from stakeholders and advise them on the most optimal technical and design (architectural) solutions.
+You choose and substantiate solutions for a given problem.
 
 
