@@ -19,7 +19,7 @@ Omdat wij gebruik maken van azure krijgen wij ook een burndown chart. Dit is een
 
 <br/>
 
-### Cultural differences
+#### Cultural differences
 
 Ik heb een IDI afgelecht om mijn gedachten over cultuur verschillen te zien. Hier kwam uit dat ik zelf het gevoel heb dat ik goed kan omgaan met culturele verschillen en dat ik me in beide schoenen kan plaatsen omdat ik gemakkelijk overeenkomsten zie.
 ![image](https://user-images.githubusercontent.com/113592556/206206874-ec00972a-860a-441c-a7dd-b092b06ba64b.png)
@@ -36,6 +36,17 @@ Ik heb in mijn IDI ook een test gemaakt over dit onderwerp. Hier werd ik bekend 
 ![image](https://user-images.githubusercontent.com/113592556/206204689-9afc2ebe-3d4d-4f11-a8a4-0e3dfeae8ea6.png)
 
 <br />
+
+#### Ethics
+Het onderdeel ethics wil ik aantonen door over het etisch aspect van ons groepsproject te gaan. We maken namelijk een app om te zien waar een collega zichzelf bevind. Dit doen wij door middel van WiFi data. Deze data wordt een keer per kwartier naar ons gestuurd. Hierdoor kunnen we zien of een werknemer thuis, niet of op kantoor aan het werk is. Als een werknemer op kantoor is kunnen we ook zien op welke verdieping hij zich bevind. <br />
+Ikzelf vind de ethiek achter een trakker app niet heel goed. Goede voorbeelden hiervan zijn deze apps: Spy Tracker, SMS Tracker, Phone Cell Tracker, Spy Kids Tracker en Employee Work Spy. Deze 7 apps waren bedoeld om kinderen, werknemers of partners te volgen. Zolang de app op de telefoon van de gezochte persoon geïnstalleerd was konden je werkgevers, ouders of partner zien waar u zich bevond. Toen google play hierachter kwam werden deze apps meteen verwijdert van de playstore. Deze apps gaven ook instructie om de installatie van deze apps te verbergen zodat het slachtoffer niks doorhad. <br />
+Nou gaat het voorbeeld hierboven wel heel ver. Wij vragen namelijk aan de gebruiker of wij zijn WiFi data mogen uitlezen. Dit wordt 1 keer in de 12 uur opnieuw gedaan. Ook als de gebruiker op nee drukt kan de gebuiker de app gewoon normaal gebruiken maar wordt zijn data niet gebruikt. Zijn data wordt wel (ook als er op nee gedrukt wordt) doorgegeven met de rest van de WiFi data. Deze data komt ook in de backend. Hier wordt er pas gekeken wat de voorkeur was. Dit laatste verandert het ethisch aspect drastich voor mij. Want ook als de gebruiker op nee drukt wordt hij dus wel gevolgd. <br />
+Om het ethisch aspect van de app beter te maken zijn er wel bepaalde dingen die de wergever kan doen. 
+- De werkgever zou de app goed kunnen uitleggen en daarmee ook uitleggen dat je de keuze altijd kan aanpassen. 
+- De werkgever zou het installeren van de app niet verplicht hoeven te maken.
+- Er zou in een later stadium van de ontwikkeling van de app een optie kunnen komen om zelf handmatig jouw status aan te passen.
+
+Bronnen: [Tweakers](https://tweakers.net/nieuws/155278/google-verwijdert-zeven-apps-bedoeld-om-mensen-te-volgen-uit-play-store.html)
 
 ### Requirements and design
 You analyze (non-functional) requirements, elaborate (architectural) designs and validate them using multiple types of test techniques.
