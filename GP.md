@@ -1,7 +1,24 @@
 # Groepsproject
 
 ## Leeruitkomsten
-### Agile werken
+<details open>
+<summary> 
+Agile werken
+</summary>
+<br />
+Er zijn verschillende methodes om in een software development team te werken. Voorbeelden hiervan zijn de Waterfall method, agile method en de hybrid method. Al deze methodes zijn goed om mee te werken en vaak kiest de ontwikkelaar samen met de stakeholder welke methode gekozen gaat worden.
+
+Bronnen: [BigPicture](https://bigpicture.one/waterfall-agile-hybrid-differences/)
+
+#### Waterfall 
+<img src='https://user-images.githubusercontent.com/113592556/207596108-ee09b075-f55c-41eb-94cf-80f236d10971.png' align="left" height="200" />
+Zoals hierlangs zichtbaar in de afbeelding is de waterfall methode een methode waarbij alle stappen duidelijk van elkaar zijn gehaald. Dit houd in dat er geen ruimte is voor fouten als de stap al is geweest. Dit zorgt dus voor veel documentatie. Terug naar een andere stap is niet mogelijk.
+Voordelen:
+  - De software ontwikkelaars kunnen eerder fouten in het design vinden, wat ervoor zorgt dat er in een later stadium geen fouten worden gemaakt.
+  - De totale van het project kosten kunnen makkelijker worden geschat.
+  - De voorgang kan makkelijker worden geschat.
+  - Software ontwikkelaars die later in het project erbij komen kunnen makkelijker worden bijgepraat.
+  - Klanten kunnen niet zomaar requirements veranderen. 
 
 #### Azure
 In ons groepsproject maken wij gebruik van Agile werken. We hebben een Azure board opgezet met alle userstories. Deze stories staan opgedeelt per sprint. Iedere userstorie is opgedeeld in tasks. Deze tasks zijn klein genoeg dat ze door 1 persoon gedaan kunnen worden. Ook staat er per task een bepaalde tijd ingedeeld. Uiteindelijk wordt hier een burndown chart van gemaakt. 
@@ -15,10 +32,14 @@ Hierboven ziet u ons azure board. Deze is niet compleet omdat er altijd tasks bi
 #### Burndown chart
 Omdat wij gebruik maken van azure krijgen wij ook een burndown chart. Dit is een grafiek die laat zien of wij onze tasks goed hadden gepland. Je kan namelijk in iedere task aangeven hoelang je erover denkt te doen. Doe je er vervolgens langer of korter over verandert de burndown chart. Een correcte burndown chart ziet er zo uit:
 
-<img src='https://user-images.githubusercontent.com/113592556/206189571-50f08dcc-9549-4549-a6b9-accbbf526d30.png' width="420" height="300" />
+<img src='https://user-images.githubusercontent.com/113592556/206189571-50f08dcc-9549-4549-a6b9-accbbf526d30.png' height="300" />
+</details>
 
-<br/>
-
+<details open>
+  <summary>
+    Cultural differences en ethics
+  </summary>
+  
 #### Cultural differences
 
 Ik heb een IDI afgelecht om mijn gedachten over cultuur verschillen te zien. Hier kwam uit dat ik zelf het gevoel heb dat ik goed kan omgaan met culturele verschillen en dat ik me in beide schoenen kan plaatsen omdat ik gemakkelijk overeenkomsten zie.
@@ -47,7 +68,8 @@ Om het ethisch aspect van de app beter te maken zijn er wel bepaalde dingen die 
 - Er zou in een later stadium van de ontwikkeling van de app een optie kunnen komen om zelf handmatig jouw status aan te passen.
 
 Bronnen: [Tweakers](https://tweakers.net/nieuws/155278/google-verwijdert-zeven-apps-bedoeld-om-mensen-te-volgen-uit-play-store.html)
-
+</details>
+  
 ### Requirements and design
 You analyze (non-functional) requirements, elaborate (architectural) designs and validate them using multiple types of test techniques.
 
