@@ -12,7 +12,7 @@ Bronnen: [BigPicture](https://bigpicture.one/waterfall-agile-hybrid-differences/
 
 #### Waterfall 
 <img src='https://user-images.githubusercontent.com/113592556/207596108-ee09b075-f55c-41eb-94cf-80f236d10971.png' align="left" height="200" />
-Waterfall is een methode om development teams te helpen hun process in orde te houden. Deze methode zorgt voor sturctuur in het process door taken te organiseren.
+Waterfall is een methode om development teams te helpen hun proces in orde te houden. Deze methode zorgt voor sturctuur in het proces door taken te organiseren.
 Zoals hierlangs zichtbaar is in de afbeelding bestaat de Waterfall methode uit 5 verschillende fases. Dit zijn: Requirements, Design, Implementation, Verification or testing, Deployment and maintenance. Deze fases staan los van elkaar. Dit houdt in dat er niet zomaar terug naar de vorige stap gegaan kan worden. Dit is namelijk lastig en duur. Vandaar ook de naam waterfall. 
 
 <br />
@@ -27,24 +27,30 @@ Zoals hierlangs zichtbaar is in de afbeelding bestaat de Waterfall methode uit 5
   
 Bronnen: [Adobe Experience Cloud Blog](https://business.adobe.com/blog/basics/waterfall#:~:text=The%20Waterfall%20methodology%20%E2%80%94%20also%20known,before%20the%20next%20phase%20begins.)
 
-### Agile
-Agile is ook een methode om development teams structuur te geven. Maar het is heel anders dan Waterfall. Waar waterfall zijn kracht haalt in het vooraf afspreken wat er gaat gebeuren doet agile dat precies tegenovergesteld. Agile is een methode die juist zijn kracht haalt in het hebben van een itteratief process. Bij agile is het aanpassen van tasks niet heel lastig en ook goedkoper dan bij waterfall, maar dit gebeurt hierdoor ook meer.
+#### Agile
+Agile is ook een methode om development teams structuur te geven. Maar het is heel anders dan Waterfall. Waar waterfall zijn kracht haalt in het vooraf afspreken wat er gaat gebeuren doet agile dat precies tegenovergesteld. Agile is een methode die juist zijn kracht haalt in het hebben van een itteratief proces. Bij agile is het aanpassen van tasks niet heel lastig en ook goedkoper dan bij waterfall, maar dit gebeurt hierdoor ook meer. Het beste is om deze methode te gebruiken wanneer een snelle productie nodig is.
   
 <br />
   
 | Voordelen | Nadelen |
 | --- | --- |
-| - Je kan requirements makkelijk aanpassen midden in het process.| - Er moet een gemotiveert team en een gemotiveerde scrum master zijn.
-| - Het verwijderen en toevoegen van features is gemakkelijk.| - 
+| - Je kan requirements makkelijk aanpassen midden in het proces.| - Er moet een gemotiveert team en een gemotiveerde scrum master zijn.
+| - Het verwijderen en toevoegen van features is gemakkelijk.|
 | - Bugs kunnen al vroeg weggehaald worden.|
 | - De stakeholders kunnen eerder feedback geven.|
 
 
 Bronnen: [userbrain](https://www.userbrain.com/blog/agile-waterfall-hybrid)
-### hybrid
-
+#### hybrid
+Hybrid is de method die beide (Agile en Waterfall) bij elkaar voegt. Het gaat van het vooraf bepalen van requirements, wat bij Waterfall gebeurt, naar het itteratief proces van agile.
   
+| Voordelen | Nadelen |
+| --- | --- |
+| - De requirements worden goed gedocumenteerd.| - Heeft een goede manager nodig.
+| - De kosten en tijd worden ook goed geschat| - Kan dezelfde problemen krijgen als agile en waterfall.
+| - De stakeholders geven meer feedback
   
+Bronnen: [userbrain](https://www.userbrain.com/blog/agile-waterfall-hybrid), [devfacto](https://www.devfacto.com/blog/a-hybrid-software-development-method)
 #### Azure
 In ons groepsproject maken wij gebruik van Agile werken. We hebben een Azure board opgezet met alle userstories. Deze stories staan opgedeelt per sprint. Iedere userstorie is opgedeeld in tasks. Deze tasks zijn klein genoeg dat ze door 1 persoon gedaan kunnen worden. Ook staat er per task een bepaalde tijd ingedeeld. Uiteindelijk wordt hier een burndown chart van gemaakt. 
 ![image](https://user-images.githubusercontent.com/113592556/202182109-f89abe70-f032-42ec-a7d5-69516b917f67.png)
