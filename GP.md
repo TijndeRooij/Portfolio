@@ -12,7 +12,7 @@ Bronnen: [BigPicture](https://bigpicture.one/waterfall-agile-hybrid-differences/
 
 #### Waterfall 
 <img src='https://user-images.githubusercontent.com/113592556/207596108-ee09b075-f55c-41eb-94cf-80f236d10971.png' align="left" height="200" />
-Waterfall is een methode om development teams te helpen hun 
+Waterfall is een methode om development teams te helpen hun process in orde te houden. Deze methode zorgt voor sturctuur in het process door taken te organiseren.
 Zoals hierlangs zichtbaar is in de afbeelding bestaat de Waterfall methode uit 5 verschillende fases. Dit zijn: Requirements, Design, Implementation, Verification or testing, Deployment and maintenance. Deze fases staan los van elkaar. Dit houdt in dat er niet zomaar terug naar de vorige stap gegaan kan worden. Dit is namelijk lastig en duur. Vandaar ook de naam waterfall. 
 
 <br />
