@@ -24,7 +24,27 @@ Zoals hierlangs zichtbaar is in de afbeelding bestaat de Waterfall methode uit 5
 | - De voorgang kan makkelijker worden geschat.| - Stakeholders worden niet op de hoogte gehouden van de design en implementation stage.
 | - Software ontwikkelaars die later in het project erbij komen kunnen makkelijker worden bijgepraat.| - Wanneer er 1 fase langer duurt dan verwacht worden alle fases opgeschoven.
 | - Klanten kunnen niet zomaar requirements veranderen.|
+  
+Bronnen: [Adobe Experience Cloud Blog](https://business.adobe.com/blog/basics/waterfall#:~:text=The%20Waterfall%20methodology%20%E2%80%94%20also%20known,before%20the%20next%20phase%20begins.)
 
+### Agile
+Agile is ook een methode om development teams structuur te geven. Maar het is heel anders dan Waterfall. Waar waterfall zijn kracht haalt in het vooraf afspreken wat er gaat gebeuren doet agile dat precies tegenovergesteld. Agile is een methode die juist zijn kracht haalt in het hebben van een itteratief process. Bij agile is het aanpassen van tasks niet heel lastig en ook goedkoper dan bij waterfall, maar dit gebeurt hierdoor ook meer.
+  
+<br />
+  
+| Voordelen | Nadelen |
+| --- | --- |
+| - Je kan requirements makkelijk aanpassen midden in het process.| - Er moet een gemotiveert team en een gemotiveerde scrum master zijn.
+| - Het verwijderen en toevoegen van features is gemakkelijk.| - 
+| - Bugs kunnen al vroeg weggehaald worden.|
+| - De stakeholders kunnen eerder feedback geven.|
+
+
+Bronnen: [userbrain](https://www.userbrain.com/blog/agile-waterfall-hybrid)
+### hybrid
+
+  
+  
 #### Azure
 In ons groepsproject maken wij gebruik van Agile werken. We hebben een Azure board opgezet met alle userstories. Deze stories staan opgedeelt per sprint. Iedere userstorie is opgedeeld in tasks. Deze tasks zijn klein genoeg dat ze door 1 persoon gedaan kunnen worden. Ook staat er per task een bepaalde tijd ingedeeld. Uiteindelijk wordt hier een burndown chart van gemaakt. 
 ![image](https://user-images.githubusercontent.com/113592556/202182109-f89abe70-f032-42ec-a7d5-69516b917f67.png)
