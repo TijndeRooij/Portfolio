@@ -63,8 +63,23 @@ Tooling and methodology: Carry out, monitor and report on unit integration, regr
 
 ### CI/CD
 
-#### CI
-Ik heb in mijn Intellij project een dockerfile en een dockercompose file gemaakt. De dockerfile is verantwoordelijk voor het opbouwen van de docker image. Deze image wordt gerunt in een container. In mijn dockercompose file worden alle images aangemaakt. Dit zijn er meerdere. Ik run namelijk ook mijn SQL en PHPMYADMIN in docker. Ik heb hiervoor gekozen omdat ik dacht dat ze op deze manier makkelijker met elkaar konden communiceren.
+#### CD
+Ik heb in mijn Intellij project een dockerfile en een dockercompose file gemaakt. De dockerfile is verantwoordelijk voor het opbouwen van de docker image. Deze image wordt gerunt in een container. In mijn dockercompose file worden alle images aangemaakt. Dit zijn er meerdere. Ik run namelijk ook mijn SQL en PHPMYADMIN in docker. Ik heb hiervoor gekozen omdat ik dacht dat ze op deze manier makkelijker met elkaar konden communiceren. <br />
+Mijn Dockerfile ziet er zo uit: <br />
+``` dockerfile
+FROM eclipse-temurin:17-jdk-focal
+
+WORKDIR /app
+
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+
+COPY src ./src
+
+EXPOSE 6000
+
+CMD ["./mvnw", "spring-boot:run"]
+```
 
 You design and implement a (semi)automated software release process that matches the needs of the project context.
 
