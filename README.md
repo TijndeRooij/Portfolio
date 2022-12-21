@@ -16,11 +16,23 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
         - [Database](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#database)
       - [Software quality]
       - [Agile method *GP*](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#agile-method)
+        - [Waterfall](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#waterfall)
+        - [Agile](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#agile)
+        - [Hybrid](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#hybrid)
+        - [Azure](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#azure)
+        - [Burndown chart](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#burndown-chart)
       - [CI/CD]
       - [Cultural differences and ethics *GP*](https://github.com/TijndeRooij/Portfolio/edit/main/GP.md#cultural-differences)
-        - [Cultural differences]()
+        - [Cultural differences](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#cultural-differences)
+        - [Ethics](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#ethics)
         - [Onze app](https://github.com/TijndeRooij/Portfolio/edit/main/GP.md#onze-app)
-        - [Hoftede]()
+        - [Hoftede](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#culturele-dimensies-van-hofstede)
+          - [Power distance](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#power-distance)
+          - [Individualism](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#individualism)
+          - [Masculinity](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#masculinity)
+          - [Uncertainty Avoidance](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#uncertainty-avoidance)
+          - [Time Orientation](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#time-orientation)
+          - [Indulgence](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#indulgence)
       - [Requirements and design]
       - [Business processes]
       - [Professional]
