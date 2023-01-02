@@ -34,13 +34,23 @@ Agile is ook een methode om development teams structuur te geven. Maar het is he
   
 | Voordelen | Nadelen |
 | --- | --- |
-| - Je kan requirements makkelijk aanpassen midden in het proces.| - Er moet een gemotiveert team en een gemotiveerde scrum master zijn.
+| - Je kan requirements makkelijk aanpassen midden in het proces.| - Er moet een gemotiveert team en bij het scrum framework ook een gemotiveerde scrum master zijn.
 | - Het verwijderen en toevoegen van features is gemakkelijk.|
 | - Bugs kunnen al vroeg weggehaald worden.|
 | - De stakeholders kunnen eerder feedback geven.|
 
+<br />
 
-Bronnen: [userbrain](https://www.userbrain.com/blog/agile-waterfall-hybrid)
+Bij het werken van agile kun je kiezen tussen verschillende frameworks. Deze framworks zijn: Scrum, Kanban, scrumban en Extreme Programming (XP). Scrum is op het moment het meest gebruikte framework. Het wordt namelijk volgens de 15th State of Agile report door 66% van alle agile teams gebruikt. Dit komt omdat agile scrum makkelijk is om mee te beginnen.
+  
+#### Scrum
+Bij scrum werk je in een team aan een project. Het project wordt opgedeeld in sprints. Een sprint bestaat uit een aantal weken, dit spreek je van te voren af met je stakeholder. Tijdens een sprint werk je samen met je team aan verschillende userstories of requirements. Deze userstories of requirements zijn opgedeeld onder de teamleden, en ieder doet zijn deel. Aan het einde van een sprint laat je aan je stakeholder zien wat je hebt en zij geven hier feedback op. Ook zit er aan het einde van iedere sprint een retrospective. Hierin ga je met je team kijken wat er goed ging en wat er minder goed ging zodat je jezelf en je team hierop kan verbeteren. Het team in het scrum framework is opgedeeld in verschillende rollen. Deze zijn de rol van de stakeholder, de rol van de scrum master en de devops. De stakeholders zijn de eigenaren van het project en vaak ook de mensen waarvoor het project gemaakt wordt. De scrum master is de persoon die het overzicht over het team houdt en hun helpt met scrum. De devops zijn de personen in het team die zich bezig houden met het maken van het project.
+Scrum is een makkelijk framework om mee te beginnen zeker als je ook met andere teams moet werken zoals marketing of design teams, zij kunnen namelijk makkelijk aansluiten op de voorgang. 
+
+#### Kanban
+
+  
+Bronnen: [userbrain](https://www.userbrain.com/blog/agile-waterfall-hybrid), [parabol](https://www.parabol.co/resources/agile-frameworks-guide/)
 ### hybrid
 Hybrid is de method die beide (Agile en Waterfall) bij elkaar voegt. Het gaat van het vooraf bepalen van requirements, wat bij Waterfall gebeurt, naar het itteratief proces van agile.
   
@@ -49,7 +59,7 @@ Hybrid is de method die beide (Agile en Waterfall) bij elkaar voegt. Het gaat va
 | - De requirements worden goed gedocumenteerd.| - Heeft een goede manager nodig.
 | - De kosten en tijd worden ook goed geschat| - Kan dezelfde problemen krijgen als agile en waterfall.
 | - De stakeholders geven meer feedback
-  
+
 Bronnen: [userbrain](https://www.userbrain.com/blog/agile-waterfall-hybrid), [devfacto](https://www.devfacto.com/blog/a-hybrid-software-development-method)
 ### Azure
 In ons groepsproject maken wij gebruik van Agile werken. We hebben een Azure board opgezet met alle userstories. Deze stories staan opgedeelt per sprint. Iedere userstorie is opgedeeld in tasks. Deze tasks zijn klein genoeg dat ze door 1 persoon gedaan kunnen worden. Ook staat er per task een bepaalde tijd ingedeeld. Uiteindelijk wordt hier een burndown chart van gemaakt. 
