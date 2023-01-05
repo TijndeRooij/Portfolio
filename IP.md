@@ -21,20 +21,9 @@ Voor mijn inividueel project ga ik een webapplicatie maken die producten voor ee
 
 ### Web application
 #### Frontend
-Ik heb voor mijn frontend in mijn individueel project gekozen voor Vue.js. In mijn groepsproject ben ik ook verantwoordelijk geweest voor de frontend. Hier hebben wij gekozen voor React-native. Dit is de mobile versie van React. Onze stappen gingens als volgt:
-- 1. Eerst hebben wij ervoor gekozen om wireframes te maken van alle schermen. Dit hielp ons goed te begrijpen waar alle knoppen en tekstbalken op het scherm geplaatst moetsten worden zonder dat het veelste druk werd. 
-- 2. Vervolgens hebben wij alle schermen gedesignt in [Figma](https://www.figma.com/file/xFwUW9U0uNMT426Bo1XvKa/IO-team-library?node-id=0%3A1). Figma is een heel goed programma om designs te maken. Van alle scheren hebben wij meerdere designs gemaakt en deze onder elkaar geplaatst. Hieronder ziet u ons figma bord.<br />  <img src="https://user-images.githubusercontent.com/113592556/206133314-ce3d159d-9a44-4d9a-9f2f-dc75cb82bef4.png" width="600" height="410" /> <br /> 
-Zodra wij tevreden waren over de hoeveelheid aan schermen, hebben we samen met ons groepje gekozen voor een design. <br /> 
-
-- 3. Het laatste wat er nu moet gebeuren is het maken van alle scheren in React-native. Aangezien ikzelf nog nooit had gewerkt met React-native heeft me het veel tijd gekost om dit te gaan begrijpen. 
-In React-native hebben wij gebruik gemaakt van het atomic-design. Dit is een manier om alle components op te splitsen in 4 onderdelen:<br /> 
-    - Atoms<br /> 
-    - Molecules<br /> 
-    - Organisms<br /> 
-    - Templates<br /> 
-Deze 4 ondedelen gaan van klein naar groot. Bijvoobeeld: De Atoms is een vrijstaant object, een molecule is meerdere atoms bij elkaar, een organisme is meerdere molecules bij elkaar en een template is meerdere organismes bij elkaar. Hieronder ziet u daar een afbeelding over:<br /> 
-
-![image](https://user-images.githubusercontent.com/113592556/206136242-277887a6-896a-4f51-b011-e9de0c5fc4b9.png)
+<img src="https://user-images.githubusercontent.com/113592556/210814218-5d0a45ec-74b0-470a-8dd6-aaf9b921b46a.png" height=300 align="right" />
+Voor de frondend heb ik gekozen voor Vue.js. Omdat dit de eerste keer was dat een distributed system maakte wilde ik zoveel mogelijk manieren leren. Daarom heb ik niet gekozen voor React-native omdat we dat gebruikten in ons groepsproject. Omdat Vue.js HTML/CSS gebruikt kon ik ook gebruik maken van bootstrap. Dit schild mij veel werk en tijd en het ziet er prima uit voor de applicatie die ik van plan was te maken. Hierlangs staat een voorbeeld van een stukje code voor de homescreen.<br/>
+Op het moment laat ik de database id nog in de frontend zien. Ik snap dat dit een security issue met zich mee brengt want een hacker kan nu zien dat hoeveel producten er allenmaal zijn. Hij kan namelijk bedenken dat als er een id van 14 is er ook een id van 13, 12 enzovoort moet zijn. Een oplossing hiervoor zou zijn om een string te gebruiken als id. Dit zou er zo uit kunnen zien: 3388a6f7-c090-44ba-b83c-9cb0ea1460f5.
 
 #### Communicatie met backend
 Ik heb voor mijn inividueel project een full stack webapp gemaakt. Voor de frontend heb ik gebruik gemaakt van Vue.js en voor de backend heb ik gebruik gemaakt van Java Spring. Ik heb in mijn individueel project wat minder de focus gelegt op het maken van een mooie frontend maar meer op het maken van een goed lopende backend. Voor de communicatie tussen de client en de server gebruik ik in mijn individueel project axios. <br />
@@ -66,20 +55,96 @@ Tooling and methodology: Carry out, monitor and report on unit integration, regr
 #### CD
 Ik heb in mijn Intellij project een dockerfile en een dockercompose file gemaakt. De dockerfile is verantwoordelijk voor het opbouwen van de docker image. Deze image wordt gerunt in een container. In mijn dockercompose file worden alle images aangemaakt. Dit zijn er meerdere. Ik run namelijk ook mijn SQL en PHPMYADMIN in docker. Ik heb hiervoor gekozen omdat ik dacht dat ze op deze manier makkelijker met elkaar konden communiceren. <br />
 Mijn Dockerfile ziet er zo uit: <br />
+<details open>
+  <summary>
+    dockerfile
+  </summary>
+  
 ``` dockerfile
-FROM eclipse-temurin:17-jdk-focal
+FROM eclipse-temurin:11-jdk-jammy
 
 WORKDIR /app
 
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
-
 COPY src ./src
 
 EXPOSE 6000
 
 CMD ["./mvnw", "spring-boot:run"]
 ```
+</details>
+In mijn dockerfile stel ik eerst een werkmap in voor de rest van de opdrachten in de dockerfile. Deze komt op de locatie /app. 
+Vervolgens kopiëer ik de bestanden 'mvnw, .mvn, pom.xml' van mijn computer naar de container. 
+Dan maak ik een nieuwe map aan op /opt/app.
+Dan stel ik de poort 6000 bloot aan de container.
+Als laaste vertel ik het script mvnw om de opdracht 'spring-boot:run' te runnen zodra de container gestart wordt. Dit laatste runt de applicatie
+
+En mijn dockercomposefile ziet er zo uit:
+<details open>
+  <summary>
+    dockercompose file
+  </summary>
+
+``` yml
+version: '3.3'
+
+services:
+  #service 1: definition of mysql database
+  db:
+    image: mysql:latest
+    container_name: mysql-2
+    networks:
+      - productreserver-mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_DATABASE: productreserver
+    ports:
+      - "3306:3306"
+    restart: "no"
+
+
+
+  #service 2: definition of phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: my-php-myadmin
+    ports:
+      - "8082:80"
+    restart: "no"
+    networks:
+      - productreserver-mysql
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: ""
+
+
+
+  #service 3: definition of your spring-boot app
+  productreserver:                        #it is just a name, which will be used only in this file.
+    image: springio/gs-spring-boot-docker #name of the image after dockerfile executes
+    container_name: product-reserver-app  #name of the container created from docker image
+    networks:
+      - productreserver-mysql
+    depends_on: #define dependencies of this app
+      - db
+    build:
+      context: .                          #docker file path (. means root directory)
+      dockerfile: Dockerfile              #docker file name
+    ports:
+      - "5000:6000"                       #docker containter port with your os port
+    restart: "no"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/productreserver?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: ""                            #dependency name (which is defined with this name 'db' in this file earlier)
+
+networks:
+  productreserver-mysql:
+```
+</details
 
 You design and implement a (semi)automated software release process that matches the needs of the project context.
 
