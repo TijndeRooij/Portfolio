@@ -10,7 +10,7 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
       
   - Leeruitkomsten
       - [Web application *IP*](https://github.com/TijndeRooij/Portfolio/edit/main/IP.md#web-application)
-        - [Frontend *GP*](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#frontend)
+        - [Frontend](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#frontend)
         - [Communicatie tussen Front en Backend](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#communicatie-met-backend)
         - [Backend](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#backend)
         - [Database](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#database)
@@ -21,7 +21,7 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
         - [Hybrid](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#hybrid)
         - [Azure](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#azure)
         - [Burndown chart](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#burndown-chart)
-      - [CI/CD]
+      - [CI/CD](https://github.com/TijndeRooij/Portfolio/edit/main/IP.md#cicd)
       - [Cultural differences and ethics *GP*](https://github.com/TijndeRooij/Portfolio/edit/main/GP.md#cultural-differences)
         - [Cultural differences](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#cultural-differences)
         - [Ethics](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#ethics)
@@ -33,8 +33,8 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
           - [Uncertainty Avoidance](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#uncertainty-avoidance)
           - [Time Orientation](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#time-orientation)
           - [Indulgence](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#indulgence)
-      - [Requirements and design]
-      - [Business processes]
+      - [Requirements and design](https://github.com/TijndeRooij/Portfolio/edit/main/GP.md#requirements-and-design)
+      - [Business processes](https://github.com/TijndeRooij/Portfolio/edit/main/IP.md#business-processes)
       - [Professional]
      
   - Onderzoeken
