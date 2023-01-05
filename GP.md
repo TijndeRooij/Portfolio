@@ -6,10 +6,8 @@
 Agile werken
 </summary>
 <br />
-Er zijn verschillende methodes om in een software development team te werken. Voorbeelden hiervan zijn de Waterfall method, agile method en de hybrid method. Al deze methodes zijn goed om mee te werken en vaak kiest de ontwikkelaar samen met de stakeholder welke methode gekozen gaat worden.
-
-Bronnen: [BigPicture](https://bigpicture.one/waterfall-agile-hybrid-differences/)
-
+Er zijn verschillende methodes om in een software development team te werken. Voorbeelden hiervan zijn de Waterfall method, agile method en de hybrid method. Al deze methodes zijn goed om mee te werken en vaak kiest de ontwikkelaar samen met de stakeholder welke methode gekozen gaat worden. <br />
+  
 ### Waterfall 
 <img src='https://user-images.githubusercontent.com/113592556/207596108-ee09b075-f55c-41eb-94cf-80f236d10971.png' align="left" height="200" />
 Waterfall is een methode om development teams te helpen hun proces in orde te houden. Deze methode zorgt voor sturctuur in het proces door taken te organiseren.
@@ -24,8 +22,6 @@ Zoals hierlangs zichtbaar is in de afbeelding bestaat de Waterfall methode uit 5
 | - De voorgang kan makkelijker worden geschat.| - Stakeholders worden niet op de hoogte gehouden van de design en implementation stage.
 | - Software ontwikkelaars die later in het project erbij komen kunnen makkelijker worden bijgepraat.| - Wanneer er 1 fase langer duurt dan verwacht worden alle fases opgeschoven.
 | - Klanten kunnen niet zomaar requirements veranderen.|
-  
-Bronnen: [Adobe Experience Cloud Blog](https://business.adobe.com/blog/basics/waterfall#:~:text=The%20Waterfall%20methodology%20%E2%80%94%20also%20known,before%20the%20next%20phase%20begins.)
 
 ### Agile
 Agile is ook een methode om development teams structuur te geven. Maar het is heel anders dan Waterfall. Waar waterfall zijn kracht haalt in het vooraf afspreken wat er gaat gebeuren doet agile dat precies tegenovergesteld. Agile is een methode die juist zijn kracht haalt in het hebben van een itteratief proces. Bij agile is het aanpassen van tasks niet heel lastig en ook goedkoper dan bij waterfall, maar dit gebeurt hierdoor ook meer. Het beste is om deze methode te gebruiken wanneer een snelle productie nodig is.
@@ -50,9 +46,9 @@ Scrum is een makkelijk framework om mee te beginnen zeker als je ook met andere 
 #### Kanban
 <img src='https://user-images.githubusercontent.com/113592556/210235543-20a206c1-2b82-438d-a782-c83a1f8ba5e6.png' align="right" height="200" />
 Bij kanban werk je ook in een team aan een project maar net iets anders dan bij scrum. Bij kanban maak je gebruik van verschillende collumns. De meest gebruikte collumns zijn: Backlog, Work In Progress (WIP), en Done. In de backlog staat welke tasks er allenmaal gedaan moeten worden. In de WIP staat welke er op dat moment gedaan worden en in done staat welke tasks er klaar zijn. Dit proces wordt ook wel een pull process genoemt. Jij beslist namelijk wanneer je aan een nieuwe task gaat werken. Dit voorkomt dat stappen overvol raken met werk. Om ervoor te zorgen dat er niet teveel werk naarbinnen getrokken wordt, wordt er vaak een limiet gesteld op het aantal tasks wat in de WIP mag zitten. <br />
-Kanban is een framework waarbij continus delivery voorop staat. Als er een task op done gezet wordt kunnen de stakeholders dit meteen zien en kan er meteen feedback op gegeven worden. Dit is anders dan bij scrum omdat bij scrum er pas aan het einde van een sprint feedback gegeven kan worden. 
-  
-Bronnen: [userbrain](https://www.userbrain.com/blog/agile-waterfall-hybrid), [parabol](https://www.parabol.co/resources/agile-frameworks-guide/)
+Kanban is een framework waarbij continus delivery voorop staat. Als er een task op done gezet wordt kunnen de stakeholders dit meteen zien en kan er meteen feedback op gegeven worden. Dit is anders dan bij scrum omdat bij scrum er pas aan het einde van een sprint feedback gegeven kan worden. <br/>
+<br/>
+ 
 ### hybrid
 Hybrid is de method die beide (Agile en Waterfall) bij elkaar voegt. Het gaat van het vooraf bepalen van requirements, wat bij Waterfall gebeurt, naar het itteratief proces van agile.
   
@@ -62,7 +58,6 @@ Hybrid is de method die beide (Agile en Waterfall) bij elkaar voegt. Het gaat va
 | - De kosten en tijd worden ook goed geschat| - Kan dezelfde problemen krijgen als agile en waterfall.
 | - De stakeholders geven meer feedback
 
-Bronnen: [userbrain](https://www.userbrain.com/blog/agile-waterfall-hybrid), [devfacto](https://www.devfacto.com/blog/a-hybrid-software-development-method)
 ### Azure
 In ons groepsproject maken wij gebruik van Agile werken. We hebben een Azure board opgezet met alle userstories. Deze stories staan opgedeelt per sprint. Iedere userstorie is opgedeeld in tasks. Deze tasks zijn klein genoeg dat ze door 1 persoon gedaan kunnen worden. Ook staat er per task een bepaalde tijd ingedeeld. Uiteindelijk wordt hier een burndown chart van gemaakt. 
 ![image](https://user-images.githubusercontent.com/113592556/202182109-f89abe70-f032-42ec-a7d5-69516b917f67.png)
@@ -76,6 +71,20 @@ Hierboven ziet u ons azure board. Deze is niet compleet omdat er altijd tasks bi
 Omdat wij gebruik maken van azure krijgen wij ook een burndown chart. Dit is een grafiek die laat zien of wij onze tasks goed hadden gepland. Je kan namelijk in iedere task aangeven hoelang je erover denkt te doen. Doe je er vervolgens langer of korter over verandert de burndown chart. Een correcte burndown chart ziet er zo uit:
 
 <img src='https://user-images.githubusercontent.com/113592556/206189571-50f08dcc-9549-4549-a6b9-accbbf526d30.png' height="300" />
+  
+Bronnen: <br/>
+A Hybrid Software Development Method. (2023, January 1). https://www.devfacto.com/blog/a-hybrid-software-development-method<br/>
+
+Adobe Communications Team. (2022, March 18). Waterfall Methodology: A Complete Guide. Adobe Experience Cloud Blog. https://business.adobe.com/blog/basics/waterfall#:~:text=The%20Waterfall%20methodology%20%E2%80%94%20also%20known,before%20the%20next%20phase%20begins.<br/>
+  
+Burtan, G. (2021, December 30). Key Differences Between Waterfall, Agile, and Hybrid. BigPicture.one. https://bigpicture.one/waterfall-agile-hybrid-differences/<br/>
+  
+Hoe werken Burndown Charts | Agile Scrum Group. (2021, January 6). Product Owner Training. https://www.productownertraining.nl/burndown-charts/<br/>
+  
+Parabol. (2022, October 24). Agile Frameworks: A Complete Overview. https://www.parabol.co/resources/agile-frameworks-guide/<br/>
+  
+Scott, J. (2018, August 20). Waterfall, Agile or Hybrid - What Development Method Should I Choose? Userbrain Blog. https://www.userbrain.com/blog/agile-waterfall-hybrid 
+<br/>
 </details>
 
 <details open>
@@ -98,9 +107,7 @@ Omdat mijn PO hoger is dan mijn DO overschat ik mezelf in hoe ik mij aanpas in a
 Ik heb in mijn IDI ook een test gemaakt over dit onderwerp. Hier werd ik bekend gemaakt met de verschillen tussen PO en DO en waarom dit zo is. Ik heb op deze test een score gehaalt van 83%.
 
 ![image](https://user-images.githubusercontent.com/113592556/206204689-9afc2ebe-3d4d-4f11-a8a4-0e3dfeae8ea6.png)
-
-<br />
-
+  
 ### Ethics
 Het onderdeel ethics wil ik aantonen door over het etisch aspect van ons groepsproject te gaan. We maken namelijk een app om te zien waar een collega zichzelf bevind. Dit doen wij door middel van WiFi data. Deze data wordt een keer per kwartier naar ons gestuurd. Hierdoor kunnen we zien of een werknemer thuis, op kantoor aan het werk is. Als een werknemer op kantoor is kunnen we ook zien op welke verdieping hij zich bevind. <br />
 
@@ -133,15 +140,59 @@ Time Orientation gaat over de manier hoe een samenleving omgaat met tradities, n
 #### Indulgence
 Indulgence gaat over de terughoudendheid van verlangen en impulsen. Als een land hier laag op scoort is dat land vaak positiever en is de werk animo vaak lager. De mensen in dit land doen wat ze willen en geven geld uit wanneer ze dit willen. Ook zijn ze vaak optimistisch ingesteld. Als een land hier hoog op scoort heeft dit land vaak strikte normen en wordt de bevrediging van behoeftes onderdrukt.
 
-Bronnen: [Tweakers](https://tweakers.net/nieuws/155278/google-verwijdert-zeven-apps-bedoeld-om-mensen-te-volgen-uit-play-store.html)
+Bronnen:<br/>
+De 6 Cultuurdimensies van Hofstede –. (2022, December 20). Gedragvandeconsument.nl. https://gedragvandeconsument.nl/hofstede-dimensies/<br/>
+  
+Huijbregts, J. (2019, July 18). Google verwijdert zeven apps bedoeld om mensen te volgen uit Play Store. Tweakers. https://tweakers.net/nieuws/155278/google-verwijdert-zeven-apps-bedoeld-om-mensen-te-volgen-uit-play-store.html <br/>
+  
+IDI Inventory - Home. (n.d.). https://lms.idiinventory.com/<br/>
+  
+Team, E. (2019, July 31). De vijf cultuurdimensies van Hofstede: voor internationale merken. EURIB. https://www.eurib.net/de-vijf-cultuurdimensies-van-hofstede/
+  
 </details>
   
-## Requirements and design
-You analyze (non-functional) requirements, elaborate (architectural) designs and validate them using multiple types of test techniques.
+<details open> 
+  <summary>
+    Requirements and design
+  </summary>
+  
+<br/>
+  
+Ik heb voor mijn frontend in mijn individueel project gekozen voor Vue.js. In mijn groepsproject ben ik ook verantwoordelijk geweest voor de frontend. Hier hebben wij gekozen voor React-native. Dit is de mobile versie van React. Onze stappen gingens als volgt:
+  
+#### Wireframes 
+Wireframes zijn groffe schetsen van een scherm. De bedoeling is dat je bij het maken van een wireframe goed let op de positie van alle knoppen en tekstbalken als ze nog geen kleur hebben. Om dit te doen hebben we van ieder appart scherm een schets gemaakt en alle knoppen en tekstbalken op de juiste positie gezet. Op deze manier kwamen we aan het eerste groffe design van een scherm en konden we makkelijk zien of ons iedee realistich was en of het niet te druk werd.
 
-Clarification:
-Multiple types of test techniques: You apply user acceptance testing and stakeholder feedback to validate the quality of the requirements. You evaluate the quality of the design (e.g., by testing or prototyping) taking into account the formulated quality properties like security and performance.
+#### Figma
+<img src="https://user-images.githubusercontent.com/113592556/210763499-40d1dfbf-c0a0-41e3-a088-66236a517542.png" align="right" height="350" />
+  
+Vervolgens hebben wij alle schermen gedesignt in [Figma](https://www.figma.com/file/xFwUW9U0uNMT426Bo1XvKa/IO-team-library?node-id=0%3A1). Figma is een heel goed programma om designs te maken. Van alle scheren hebben wij meerdere designs gemaakt en deze onder elkaar geplaatst. Hierlangs ziet u ons figma bord.
+Zodra wij tevreden waren over de hoeveelheid aan schermen, hebben we samen met ons groepje gekozen voor een design. <br /> 
 
+De kleurkeuzes van de schermen zijn gekozen met behulp van iO's brandguide. Hierin staan verschillende design opties die iO wilt dat er gebuikt worden, en ook andersom. Ook staan hier de lettertypes en de verschillende kleurpalletten in. Met beheulp van deze kleurpalletten hebben wij de kleuren gekozen.<br />
+Ook hebben wij veel inspiratie gehaald uit de site van iO. Op de site heeft namelijk iedere pagina een andere achtergrond. Dit heeft ervoor gezorgd dat wij iedere pagina kleur een andere achtergrond hebben gegeven. De site heeft ook duidelijke patronen. Zo heeft iedere dropdown menu hetzelfde pijl icoontje. Door ook naar deze dingen te kijken werd ons design meer gericht op iO's keuzes dan die van ons. 
+
+### React-native
+Hierna hebben we alle schermen gemaakt in React-Native Aangezien ikzelf nog nooit had gewerkt met React-native heeft me het veel tijd gekost om dit te gaan begrijpen.<br />
+We hebben gekozen voor react-native omdat je hierin namelijk met dezelfde code een android app en een IOS app maakt. Dit is handig zodat we niet 2 verschillende apps moesten maken. Dit kost makelijk meer tijd en het is ook onnodig aangezien er mogelijkheden zijn om ze beiden in een keer te maken. <br />
+In React-native hebben wij gebruik gemaakt van het atomic-design. Dit is een manier om alle components op te splitsen in 4 onderdelen:<br /> 
+    - Atoms<br /> 
+    - Molecules<br /> 
+    - Organisms<br /> 
+    - Templates<br /> 
+Deze 4 ondedelen gaan van klein naar groot. Bijvoobeeld: De Atoms is een vrijstaant object, een molecule is meerdere atoms bij elkaar, een organisme is meerdere molecules bij elkaar en een template is meerdere organismes bij elkaar. Hieronder ziet u daar een afbeelding over:<br /> 
+  
+<img src="https://user-images.githubusercontent.com/113592556/206136242-277887a6-896a-4f51-b011-e9de0c5fc4b9.png" align="left" height="150" />
+
+Ikzelf vind dit een heel handig design. Het is namelijk heel erg makkelijk om stukjes te hergebruiken. We hebben namelijk maar 1 design voor een button gemaakt en deze kunnen we vervolgens met een kleine aanpassing overal gebruiken presies zoals wij dat willen. Dit zorgt voor efficientie. Je hoeft namelijk niet voor ieder klein dingetje een helmaal nieuw design te maken. 
+  
+<br /> 
+  
+### Testen 
+De schermen in react-native zijn ook getest door gebruikers. Deze gebruikers zijn groepsleden, buitenstaanders en stakeholders. Doormiddel van deze tests zijn we erachter gekomen dat de design nog beter konden. Zo kwamen we erachter dat gebuikers graag wilde weten wat andere collega's van jou konden zien. Ook zijn we erachter gekomen dat de My Team cards niet veel gebruikt werden. Met deze observaties hebben we het dasboard een compleet nieuw design gegeven. Nu kan de gebruiker bovenin zijn eigen informatie zien en kan hij makkelijker gebuik maken van de Favorates cards die nu onderin staan.  
+  
+</details>
+  
 ## Professional
 You act in a professional manner during software development and learning.
 
