@@ -163,11 +163,43 @@ networks:
   productreserver-mysql:
 ```
   </details>
-</details>
-You design and implement a (semi)automated software release process that matches the needs of the project context.
+  
+#### CI
+Voor het onderdeel CI ben ik bezig geweest met github actions.
+```yml
+name: Java CI with Maven
 
-Clarification:
-Design and implement: You design a release process and implement a continuous integration and deployment solution (using e.g. Gitlab CI and Docker).
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Maven
+      run: mvn -B package -f ProductReserver/pom.xml
+    - name: Start containers
+      run: docker-compose -f "ProductReserver/docker-compose.yml" up -d --build
+```
+De pijplijn wordt getriggerd door een push naar de master branch of een pull request naar de master branch. In de file wordt 1 job gerunt die uit 4 stappen bestaat.
+ - De stap "Checkout" gebruikt de actie actions/checkout@v3 om de code in de repository uit te checken. Door dit te doen wordt er uit gecheckt naar de default branch. Dit is "/". Om deze reden heb ik "ProductReserver/" voor iedere file staan die de job moet hebben. 
+ - De "Set up JDK 17" stap gebruikt de actions/setup-java@v3 actie om JDK versie 17 in te stellen, hij gebruikt temurin als distributie en maven als cache.
+ - De "Build with Maven" stap voert het mvn commando uit om het project te bouwen met behulp van het ProductReserver/pom.xml bestand.
+ - De stap "Start containers" start de container door het commando docker-compose -f "ProductReserver/docker-compose.yml" up -d --build uit te voeren. Deze runt de docker-composefile en hiermee ook de dockerfile.
+</details>
 
 <details open>
   <summary>
