@@ -3,6 +3,9 @@
     Wat is een goede manier om je applicatie te beveiligen?
   </summary>
   
+# DOT
+Voor dit onderzoek heb ik gebruik gemaakt van de Library research method. Deze metode wordt gebruikt om onderzoek te doen naar wat er al gemaakt is. Hierbij ga je bepaalde oplossingen zoeken die er al zijn. Aangezien ik in dit onderzoek opzoek ga naar iets, bestaat het antwoord dus al. Hierom heb ik voor Library gekozen.
+  
 # Wat is een goede manier om je applicatie te beveiligen?
 Authenticatie en autorisatie is een van de belangrijkste processen in een full stack app. De authenticatie zorgt namelijk voor beveiliging en de autorisatie zorgt voor een rollensysteem. In dit onderzoek ga ik onderzoeken wat een goede manier is om mijn webapp te beveiligen en hoe ik dit moet maken. 
 
@@ -103,6 +106,9 @@ JSON Web Token (JWT). (n.d.). https://www.iana.org/assignments/jwt/jwt.xhtml
   <summary>
     Hoe maak ik een goede UII/UX?
   </summary>
+  
+# DOT
+Voor dit onderzoek heb ik ook gebruik gemaakt van de Library method. Aangezien ik hier opzoek ga naar de beste manier bestaat ook hier het antwoord al. Ook heb ik gebruik gemaakt van de Lab method aangezien ik verschillende senarios bedenk om mijn onderzoek te verduidelijken.
 
 # Hoe maak ik een goede UI/UX?
 Een goede UI/UX zorgt zonder twijfel voor een betere applicatie. Als een gebruiker de app makkelijk kan gebruiken en hier maar weinig tot niks voor hoeft te leren zal de gebruiker vaker terug komen. Maar wat is nou een UI/UX? Wat is precies het verschil? En hoe maak je een goede UI/UX?
