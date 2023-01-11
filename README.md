@@ -37,6 +37,6 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
       - [Business processes](https://github.com/TijndeRooij/Portfolio/edit/main/IP.md#business-processes)
       - [Professional]
      
-  - Onderzoeken
+  - [Onderzoeken](https://github.com/TijndeRooij/Portfolio/blob/main/Onderzoeken.md)
       - [Hoe maak ik een veilige login?](https://github.com/TijndeRooij/Portfolio/blob/main/Onderzoeken.md#wat-is-een-goede-manier-om-je-applicatie-te-beveiligen)
-      - [Hoe maak ik een goede UI/UX?]
+      - [Hoe maak ik een goede UI/UX?](https://github.com/TijndeRooij/Portfolio/blob/main/Onderzoeken.md#hoe-maak-ik-een-goede-uiux)
