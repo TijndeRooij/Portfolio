@@ -26,7 +26,7 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
         - [Cultural differences](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#cultural-differences)
         - [Ethics](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#ethics)
         - [Onze app](https://github.com/TijndeRooij/Portfolio/edit/main/GP.md#onze-app)
-        - [Hoftede](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#culturele-dimensies-van-hofstede)
+        - [Hofstede](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#culturele-dimensies-van-hofstede)
           - [Power distance](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#power-distance)
           - [Individualism](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#individualism)
           - [Masculinity](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#masculinity)
