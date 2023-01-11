@@ -1,3 +1,8 @@
+<details open>
+  <summary>
+    Wat is een goede manier om je applicatie te beveiligen?
+  </summary>
+  
 # Wat is een goede manier om je applicatie te beveiligen?
 Authenticatie en autorisatie is een van de belangrijkste processen in een full stack app. De authenticatie zorgt namelijk voor beveiliging en de autorisatie zorgt voor een rollensysteem. In dit onderzoek ga ik onderzoeken wat een goede manier is om mijn webapp te beveiligen en hoe ik dit moet maken. 
 
@@ -11,22 +16,16 @@ Authenticatie is het mechanisme wat jouw inloggegevens herkend en linkt aan jouw
 Het authenticatie proces kan je opsplitsen in 2 delen: credential en authentication.
 Het credential deel is het deel waarin het systeem vraagt om jouw inloggegevens en het authentication deel is het controleren van deze inloggegeven.
 
-Bronnen: [techtarget](https://www.techtarget.com/searchsecurity/feature/5-common-authentication-factors-to-know)
-
 ## Soorten authenticatie
 Er zijn 3 verschillende soorten authenticatie: Single-factor authentication, 2-factor authentication en multifactor authentication. 
 Single factor authenticatie is een authenticatie waarin de gebruiker alleen zijn gebruikersnaam en wachtwoord hoeft in te vullen. Dit is genoeg voor het systeem om te weten welke data hij moet teruggeven. 
 2-factor authenticatie is een authenticatie waarin ook de gebruikersnaam en wachtwoord wordt gevraagd, maar er wordt ook nog een bericht naar de gebruiker zijn mobile apparaat gestuurd.
 Multifactor authenticatie is een authenticatie waarbij de gebruiker naast zijn gebruikersnaam en wachtwoord ook nog op een andere manier moet bewijzen dat hij geen hacker is. Een bekend voorbeeld hiervan is pinnen. Je moet je bankpas laten zien (Iets wat de gebruiker heeft) en je moet je pincode invullen (Iets wat de gebruiker weet). De laatste is hierdoor veiliger.
 
-Bronnen: [delinea](https://delinea.com/blog/sfa-mfa-difference), [studiocdn](https://studiocdn.com/faq/what-is-two-factor-authentication/?gclid=Cj0KCQiA99ybBhD9ARIsALvZavVxycugjDb0dBqchP3yF4AOxEHdkS29I-0IGOrTqq1gKIzGSwC3Q6caAhZPEALw_wcB)
-
 ## Services
 Het beveiligen van een app kan op veel verschillende manieren, zo worden er bijvoorbeeld verschillende services aangeboden zoals [Auth0](https://auth0.com/). Auth0 is een service die naast het inloggen ook het maken van SSO (Single Sign On) gemakkelijk maakt. Single Sign On is ook een manier van inloggen. Bij SSO kan je op verschillende platformen met hetzelfde account inloggen. SSO is zo gemakkelijk in Auth0 omdat Auth0 gebruik maakt van het [OpenID connect protocol](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol).<br />
 OpenID connect (OIDC) is een protocol wat het maken ven SSO gemakelijk maakt. Het Auth0 framework houdt zich vooral bezig met het inloggen van een gebruiker en OIDC met SSO. Omdat Auth0 OIDC gebruikt om SSO ook gemakkelijk te maken en is Auth0 een goede service om te gebruiken in uw applicatie.<br />
 Naast Auth0 is ook [Amazon Cognito](https://aws.amazon.com/cognito/) een goede service. Ook Amazon Cognito maakt gebruik van het OIDC-protocol en dit maakt ook Amazon Cognitio goed voor SSO. Om te kiezen tussen Auth0 en Amazon Cognito is daarom ook lastig. Niet alleen voor SSO maar ook voor inlog services. Het grootste verschil is dat Amazon Cognito vaak duurder is als je de goede support wil voor OIDC.
-
-Bronnen: [Auth0](https://auth0.com/), [OpenID Connect](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol), [brocoders](https://brocoders.com/blog/auth0-vs-cognito/), [Amazon Cognito](https://aws.amazon.com/cognito/)
 
 ## Tokens
 Het veilig maken van een authenticatie gebeurt meestal met tokens. De meest bekende tokens zijn: 
@@ -38,8 +37,6 @@ Het veilig maken van een authenticatie gebeurt meestal met tokens. De meest beke
 Hieronder ziet u de specificaties van alle bovenstaande tokens.
 ![image](https://user-images.githubusercontent.com/113592556/203552268-e82caf83-6ff4-43ce-ba7a-2ebcccc1e00f.png)<br />
 <sub>Bron: [scottbrady91](https://www.scottbrady91.com/jose/alternatives-to-jwts#alternatives)</sub>
-
-Bronnen: [scottbrady91](https://www.scottbrady91.com/jose/alternatives-to-jwts#alternatives)
 
 ## JWT
 Ikzelf heb gekozen voor JWT-tokens. Een JWT-token is opgedeeld in 3 stukken: een header, een payload en een signature. Deze stukken worden opgesplitst doormiddel van punten. 
@@ -71,14 +68,41 @@ Het doel van een access token is om de gebruiker zijn requests te laten doen. Zo
 ### Refresh token
 Een refresh token wordt samen met een access token meegeleverd als de gebruiker succesvol inlogt. Het doel van een refresh token is dat de gebruiker zonder opnieuw in te hoeven loggen een nieuwe access token kan krijgen. Om de applicatie nog veiliger te maken heeft een access token namelijk maar een bepaade tijd dat deze gebruikt kan worden. Als deze tijd afloopt kan een access token niet meer gebruikt worden. Zonder dat de gebruiker dit door heeft wordt er dan een refresh token naar de backend gestuurd. Deze refresh token laat de applicatie een nieuwe access token maken en deze wordt vervolgens weer gebruikt als normaal. Een refresh token kan ook aflopen na een bepaalde tijd. Als dit gebeurt moet de gebruiker wel opnieuw inloggen.
 
-Bronnen: [jwt.io](https://jwt.io/introduction), [rfc-editor](https://www.rfc-editor.org/rfc/rfc7519#section-4.2), [iana](https://www.iana.org/assignments/jwt/jwt.xhtml#claims), [Amigoscode](https://youtu.be/VVn9OG9nfH0)
-
 ## Conclusie
 In conclusie is het maken van een goede beveiliging voor uw applicatie geen gemakkelijke opgaven. Er zijn heel veel verschillende keuzes die de uitkomst drastisch kunnen veranderen. Ikzelf heb een authenticatie handmatig gemaakt met gebruik van JWT-tokens. Dit is heel leerzaam maar dit heeft mij wel heel veel werk gekost. Als je wat minder tijd hebt zou ik daarom kiezen om een service te gebruiken. Welke service ligt aan de applicatie die u maakt. Ikzelf zou voor Auth0 kiezen.<br />
 Als u wel wat meer tijd hebt zou ik zelf een authenticatie proberen te maken. Dit zal uiteraard minder veilig zijn dan een service maar dit is wel heel leerzaam. Als token zou ik dan kiezen voor JWT-tokens.
 
+## Bronnenlijst
+Amigoscode. (2021). Spring Boot and Spring Security with JWT including Access and Refresh Tokens 🔑 [Video]. Youtube. https://youtu.be/VVn9OG9nfH0
 
+Auth0. (n.d.). OpenID Connect Protocol. Auth0 Docs. https://auth0.com/docs/authenticate/protocols/openid-connect-protocol
 
+Auth0: Secure access for everyone. But not just anyone. (n.d.). Auth0. https://auth0.com/
+
+auth0.com. (n.d.). JWT.IO - JSON Web Tokens Introduction. JSON Web Tokens - jwt.io. https://jwt.io/introduction
+
+Brady, S. (2020, April 28). Alternatives to JSON Web Tokens (JWTs). Scott Brady. https://www.scottbrady91.com/jose/alternatives-to-jwts
+
+Bratushka, A. (2022, August 5). Auth0(Okta) vs Cognito. Brocoders - Technical Partner for Startups From MVP to Exit. https://brocoders.com/blog/auth0-vs-cognito/
+
+Customer Identity and Access Management – Amazon Cognito – Amazon Web Services. (n.d.). Amazon Web Services, Inc. https://aws.amazon.com/cognito/
+
+Donegan, K. (2019, May 6). 5 common authentication factors to know. Security. https://www.techtarget.com/searchsecurity/feature/5-common-authentication-factors-to-know
+
+Feltner, S. (2022). Single-factor Authentication (SFA) vs. Multi-factor Authentication (MFA). Delinea. https://delinea.com/blog/sfa-mfa-difference
+
+Jones, M. (2023, May 11). RFC 7519: JSON Web Token (JWT). https://www.rfc-editor.org/rfc/rfc7519
+
+JSON Web Token (JWT). (n.d.). https://www.iana.org/assignments/jwt/jwt.xhtml
+
+“‘Two Factor Authentication,’” Why is it Important, and What Does it Do? (2016, July 19). StudioCDN. https://studiocdn.com/faq/what-is-two-factor-authentication/?gclid=Cj0KCQiA99ybBhD9ARIsALvZavVxycugjDb0dBqchP3yF4AOxEHdkS29I-0IGOrTqq1gKIzGSwC3Q6caAhZPEALw_wcB
+
+</details>
+
+<details open>
+  <summary>
+    Hoe maak ik een goede UII/UX?
+  </summary>
 
 # Hoe maak ik een goede UI/UX?
 Een goede UI/UX zorgt zonder twijfel voor een betere applicatie. Als een gebruiker de app makkelijk kan gebruiken en hier maar weinig tot niks voor hoeft te leren zal de gebruiker vaker terug komen. Maar wat is nou een UI/UX? Wat is precies het verschil? En hoe maak je een goede UI/UX?
@@ -89,8 +113,6 @@ UI en UX zijn 2 verschillende dingen die beiden te maken hebben met hoe een gebr
 UI staat voor User interface en gaat over hoe een applicatie eruit ziet. Een UI designer heeft als taak om de kleinste details te perfectioneren. Hiermee wordt bijvoorbeeld gekeken naar: het kleur pallet, afbeeldingen, hovers, animaties, knoppen, menu's en nog veel meer. Een UI designer zal zich vooral bezig houden met testen, trends, industrie analyse en web design prisiples. Hij doet dit zodat een gebuiker zich confortabel voelt bij het gebuik van de applicatie.<br />
 UX staat voor User Experience en gaat over hoe een applicatie werkt. Er wordt bijvoorbeeld rekening gehouden met wat een gebuiker fijn en niet fijn vind aan een website. Om dit voor elkaar te krijgen zal een UX desinger veel onderzoek doen en zal hij zijn applicatie ook veel testen. Zijn einddoel is om een applicatie te desingen waar een gebuiker waarde aan hecht.<br />
 Samengevat, UI gaat over hoe een gebruiker interacteert met een applicatie en UX gaat over hoe een gebruiker zich voelt bij het gebuik van de applicatie.
-
-Bronnen: [elementor](https://elementor.com/blog/ux-vs-ui/?utm_source=google&utm_medium=cpc&utm_campaign=13060922353&utm_term=&gclid=CjwKCAiA2fmdBhBpEiwA4CcHzSPs175dg3Ldf2Hs0Jl4G7OM8IpnbyXpOCtkk-aq2dwOwmKOWYB7XRoCtrYQAvD_BwE)
 
 ## Hoe maak je een goede UI/UX
 Het maken van een goede UI/UX is niet iets wat heel snel gedaan is. Veel mensen hebben hier een studie voor afgerond om te begrijpen hoe je een goede UI/UX maakt. Het maken van een goede UI/UX is dus ook niet iets wat heel gemakkelijk is en is ook niet iets wat zomaar gedaan kan worden. Toch is het maken van een goede UI/UX op te delen in verschillende stappen.
@@ -107,7 +129,7 @@ Door op deze manier naar je applicatie te kijken zal je eerder zien waar er opti
 
 ### Stap 4
 <img src='https://user-images.githubusercontent.com/113592556/211781815-c828098f-36cd-4b68-8474-9cf02e0d82a8.png' height=200 align=left /> 
-Stap 4 is: Maak een schets van iedere pagina. Het vooraf schetsen van je pagina's helpt je met het bedenken waar alle belangrijke dingen moeten komen. Bij deze eerste schets is het UX element het aller belangrijkst. Je hoeft nu namelijk nog niet na te denken over het kleupallet of over welke animaties je gaat gebruiken. Een goede manier om deze eerste schets te maken is door gebruik te maken van wireframes. Wireframes zijn schetsen die geen kleur hebben. Ze zijn gemaakt om jou een eerste zicht te geven op waar alle onderdelen moeten komen staan.<br />
+Stap 4 is: Maak een schets van iedere pagina. Het vooraf schetsen van je pagina's helpt je met het bedenken waar alle belangrijke dingen moeten komen. Bij deze eerste schets is het UX element het aller belangrijkst. Je hoeft nu namelijk nog niet na te denken over het kleupallet of over welke animaties je gaat gebruiken. Een goede manier om deze eerste schets te maken is door gebruik te maken van wireframes (ook wel mockups genoemt). Wireframes zijn schetsen die geen kleur hebben. Ze zijn gemaakt om jou een eerste zicht te geven op waar alle onderdelen moeten komen staan.<br />
 Het maken van een wireframe kan op verschillende manieren. Zo kan je een wireframe tekenen op papier of op een whiteboard, maar er zijn ook genoeg apps die jou hiermee kunnen helpen.<br />
 Als je klaar bent met het maken van je eerste schets is het ook handig om deze te testen en de feedback meteen te implementeren. Want testen blijft toch het aller belangrijkste.
 
@@ -125,5 +147,15 @@ Stap 7 is: Blijf jouw design modern houden. Als laatste ga je continu onderzoek 
 ## Conclusie
 Het maken van een UI/UX is niet heel gemakkelijk omdat er veel verschillende stappen in voor komen. Toch is het wel zelf te doen door je te houden aan het bovenstaande stappenplan. Bij dit stappenplan wordt vooral de nadruk gelecht op testen en onderzoek doen. Deze 2 dingen zijn dan ook het aller belangrijkste om te doen bij het maken van een goede UI/UX. Want zonder onderzoek kom je er te laat achter wie je doelgroep is en zonder testen weet je niet of je schetsen goed zijn voor jouw doelgroep. Het is dus belangrijk om goed te weten wie je doelgroep is en wat deze doelgroep met jouw applicatie of website gaat doen.
 
+## Bronnenlijst:
+enrico@flash3000.nl. (2017, May 5). Hoe maak je websites toegankelijker voor ouderen. Flash3000 Productions Maatwerk Websites. https://flash3000.nl/blog/hoe-maak-je-websites-toegankelijker-voor-ouderen/
 
-Bronnen: [website voor ouderen](https://flash3000.nl/blog/hoe-maak-je-websites-toegankelijker-voor-ouderen/), [UX design](https://www.competencefactory.nl/nieuws/starten-met-ux-design)
+In 4 stappen starten met UX Design | Competence Factory. (n.d.). https://www.competencefactory.nl/nieuws/starten-met-ux-design
+
+Lazarovich, M. N. (2022, February 23). UX vs. UI Design: What’s the Difference? Elementor. https://elementor.com/blog/ux-vs-ui/?utm_source=google
+
+What Are Wireframes? | Wireframing Academy | Balsamiq. (n.d.). https://balsamiq.com/learn/articles/what-are-wireframes/
+
+WordPress Brothers. (2020, December 29). Wat is het UX design van je website? Met stappenplan! WP Brothers. https://wpbrothers.nl/blog/wat-is-het-ux-design-van-je-website-met-stappenplan/
+  
+</details>
