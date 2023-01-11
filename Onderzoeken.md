@@ -76,3 +76,12 @@ Bronnen: [jwt.io](https://jwt.io/introduction), [rfc-editor](https://www.rfc-edi
 ## Conclusie
 In conclusie is het maken van een goede beveiliging voor uw applicatie geen gemakkelijke opgaven. Er zijn heel veel verschillende keuzes die de uitkomst drastisch kunnen veranderen. Ikzelf heb een authenticatie handmatig gemaakt met gebruik van JWT-tokens. Dit is heel leerzaam maar dit heeft mij wel heel veel werk gekost. Als je wat minder tijd hebt zou ik daarom kiezen om een service te gebruiken. Welke service ligt aan de applicatie die u maakt. Ikzelf zou voor Auth0 kiezen.<br />
 Als u wel wat meer tijd hebt zou ik zelf een authenticatie proberen te maken. Dit zal uiteraard minder veilig zijn dan een service maar dit is wel heel leerzaam. Als token zou ik dan kiezen voor JWT-tokens.
+
+
+
+
+# Hoe maak ik een goede UI/UX?
+Een goede UI/UX zorgt zonder twijfel voor een betere applicatie. Als een gebruiker de app makkelijk kan gebruiken en hier maar weinig tot niks voor hoeft te leren zal de gebruiker vaker terug komen. Maar wat is nou een UI/UX? Wat is precies het verschil? En hoe maak je een goede UI/UX?
+
+## Wat is UI/UX
+UI en UX zijn 2 verschillende dingen die beiden te maken hebben met hoe een gebruiker om kan gaan met een applicatie. UI staat voor User interface 
