@@ -76,12 +76,35 @@ public void getAllProductsEndPoint() throws Exception {
 }
 ```
 Hierboven staat een van mijn misslukte endpoint tests. Ik probeer hier het ophalen van alle products te testen. Deze producten worden op hun 'id' gesorteerd en dat wordt teruggegeven aan de fontend.<br/>
-Als eerste maakt ik een string aan met de waarde "id", dit is waar de service laag de opgehaalde products op gaat sorteren. Vervolgens mock ik de Repository die de products terug zou moeten geven. Ik mock dit zodat ik niet mijn echte database gebruik om de tests op uit te voeren. De 2e lijn zou zodra de findAll() method wordt aangeroepen een lijst van 3 predefinend products moeten teruggeven. Vervolgens ga ik mijn con
-  
-You use software tooling and methodology that continuously monitors and improve the software quality during software development.
+Als eerste maakt ik een string aan met de waarde "id", dit is waar de service laag de opgehaalde products op gaat sorteren.<br />
+Vervolgens mock ik de Repository die de products terug zou moeten geven. Ik mock dit zodat ik niet mijn echte database gebruik om de tests op uit te voeren. De 2e lijn zou zodra de findAll() method wordt aangeroepen een lijst van 3 predefinend products moeten teruggeven.<br/>
+Vervolgens ga ik mijn controller aanroepen. Dit doe ik door een request te maken naar '/{sorter}. Als ik dit heb gedaan check ik of de status 200 is, of ik JSON terug krijg en of het response een lengte heeft van 3.<br/>
+<br/>
+Als ik de test op deze manier run krijg ik de volgede error.
 
-Clarification:
-Tooling and methodology: Carry out, monitor and report on unit integration, regression and system tests, with attention for security and performance aspects, as well as applying static code analysis and code reviews.
+> org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke 
+> "com.reserver.ProductReserver.API.Product.ProductService.sortProductList(String)" because "this.productService" is null
+
+Ik heb verschillende dingen geprobeert om deze error op te lossen. Zo heb ik geprobeert mijn service laag te mocken, maar dit is natuurlijk niet de bedoeling omdat ik hier dan niet mee test wat ik wil testen. Ook heb ik geprobeert hetzelfde te doen als een klasgenoot van mij. Hij roept voor het ophaalen van alle producten niet de servicelaag aan. Hij heeft de repo.findAll() in zijn controller staan. Maar op deze manier heb ik niks aan mijn servicelaag, hierin sorteer ik namelijk alle producten. Dit is dus ook geen optie. Verder heb ik nog veel opgezocht over deze error, maar ik kwam er niet uit dus toen heb ik de keuze gemaakt om End to End testen te gaan maken in cypress. <br/>
+<br/>
+ETE testing is mij wel gelukt. Met deze tests test ik niet alleen mijn backend maar ook mijn frontend. Omdat de frontend een connectie heeft mijn backend test ik hier ook mijn endpoints mee. Het nadeel van ETE testing is dat je jouw testen uitvoert op je eigen database.<br/>
+Mijn ETE testen zien er als volgt uit.<br />
+![image](https://user-images.githubusercontent.com/113592556/212326970-eea9f356-6660-42a8-8040-c67675c2c085.png)<br/>
+Met deze test test ik mijn update functie. Eerst moet ik inloggen om al mijn products te zien. Met deze test test ik dus ook mijn inlogfunctie. Ook test ik met deze test mijn searchfunctie. Hierna kan ik pas beginnen aan het testen van mijn update funtie. Met een ETE test test ik dus veel meer dan oorspronkelijk mijn doel was.<br/>
+Een ETE test werkt als volgt. Elk onderdeel in je frontend heeft een id. Met Cypress kan ik dit id aanropen door cy.get('') te doen. Hierin zet ik mijn id en dan kan ik verschillende acties daarop uitvoeren. Een groot voordeel van Cypress is dat je vervolgens deze actie ook kan zien in hun webapplicatie. (Zie afbeeling hieronder)
+![image](https://user-images.githubusercontent.com/113592556/212328915-fc8b9972-29b4-460b-98d1-bc6ba4ab4c65.png)
+Iedere test kan je aanmaken in cypress als spec en deze specs kun je programmeren in visual studio code.
+  
+#### Code analyse
+Ook heb ik voor dit leerdoel mij code geanalyseert moet sonarcloud. Dit is een programma wat code analyseert en de problemen in je code laat zien. Deze problemen zijn vaak problemen die je zelf niet zomaar ziet. Mijn sonarcloud ziet er als volgt uit:
+![image](https://user-images.githubusercontent.com/113592556/212330053-f7d763b3-7a1f-49de-ba77-5b26e0e62f40.png) <br/>
+Zoals je kan zien in de afbeelding heb ik 8 vulnerabilities. Ook heb ik 43 codesmells en 0 bugs. Het verschil is als volgt:
+- Bug: Een fout in je code die naar een error kan lijden.
+- Vulnerability: Een security issue wat open staat tot cyber aanval.
+- Code Smell: Een onderhouds probleem wat kan lijden tot onduidelijkheid.
+
+Ik heb sonarcloud ook in mijn CI file gezet. Dit heb ik gedaan zodat er bij iedere push of pull een nieuwe analyse wordt gemaakt. Hierdoor weet ik meteen of er iets mis is met mijn code en hoe ik het moet veranderen. Dit deel in de CI file ziet er als volgt uit: 
+
 
 </details>  
   
