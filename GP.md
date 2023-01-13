@@ -172,7 +172,7 @@ Zodra wij tevreden waren over de hoeveelheid aan schermen, hebben we samen met o
 De kleurkeuzes van de schermen zijn gekozen met behulp van iO's brandguide. Hierin staan verschillende design opties die iO wilt dat er gebuikt worden, en ook andersom. Ook staan hier de lettertypes en de verschillende kleurpalletten in. Met behulp van deze kleurpalletten hebben wij de kleuren gekozen.<br />
 Ook hebben wij veel inspiratie gehaald uit de site van iO. Op de site heeft namelijk iedere pagina een andere achtergrond. Dit heeft ervoor gezorgd dat wij iedere pagina kleur een andere achtergrond hebben gegeven. De site heeft ook duidelijke patronen. Zo heeft iedere dropdown menu hetzelfde pijl icoontje. Door ook naar deze dingen te kijken werd ons design meer gericht op iO's keuzes dan die van ons. 
 
-### React-native
+#### React-native
 Hierna hebben we alle schermen gemaakt in React-Native Aangezien ikzelf nog nooit had gewerkt met React-native heeft me het veel tijd gekost om dit te gaan begrijpen.<br />
 We hebben gekozen voor react-native omdat je hierin namelijk met dezelfde code een Android-app en een IOS-app maakt. Dit is handig zodat we niet 2 verschillende apps moesten maken. Dit kost makkelijk meer tijd en het is ook onnodig aangezien er mogelijkheden zijn om ze beiden in een keer te maken. <br />
 In React-native hebben wij gebruik gemaakt van het atomic-design. Dit is een manier om alle components op te splitsen in 4 onderdelen:<br /> 
@@ -188,7 +188,7 @@ Ikzelf vind dit een heel handig design. Het is namelijk heel erg makkelijk om st
   
 <br /> 
   
-### Testen 
+#### Testen 
 De schermen in react-native zijn ook getest door gebruikers. Deze gebruikers zijn groepsleden, buitenstaanders en stakeholders. Doormiddel van deze tests zijn we erachter gekomen dat de designs nog beter konden. Zo kwamen we erachter dat gebruikers graag wilde weten wat andere collega's van jou konden zien. Ook zijn we erachter gekomen dat de My Team cards niet veel gebruikt werden. Met deze observaties hebben we het dasboard een compleet nieuw design gegeven. Nu kan de gebruiker bovenin zijn eigen informatie zien en kan hij makkelijker gebruik maken van de Favorates cards die nu onderin staan.  
   
 </details>
