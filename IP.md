@@ -104,7 +104,27 @@ Zoals je kan zien in de afbeelding heb ik 8 vulnerabilities. Ook heb ik 43 codes
 - Code Smell: Een onderhouds probleem wat kan lijden tot onduidelijkheid.
 
 Ik heb sonarcloud ook in mijn CI file gezet. Dit heb ik gedaan zodat er bij iedere push of pull een nieuwe analyse wordt gemaakt. Hierdoor weet ik meteen of er iets mis is met mijn code en hoe ik het moet veranderen. Dit deel in de CI file ziet er als volgt uit: 
-
+```yml
+    - name: Cache SonarCloud packages
+      uses: actions/cache@v1
+      with:
+        path: ~/.sonar/cache
+        key: ${{ runner.os }}-sonar
+        restore-keys: ${{ runner.os }}-sonar
+    - name: Cache Maven packages
+      uses: actions/cache@v1
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**ProductReserver/pom.xml') }}
+        restore-keys: ${{ runner.os }}-m2
+    - name: Build and analyze
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=TijndeRooij_ProductReserver2 -f "ProductReserver/pom.xml" 
+```
+De eerste stap gebruikt de actie 'actions/cache@v1' om SonarCloud te cache. Deze cache gaat naar /.sonar/cache. Hetzelfde geld voor Maven. Alleen de maven cache gaat naar /.m2.<br />
+Hierna wordt de code scan uitgevoerd in sonarcloud. Hiervoor heeft hij mijn pomfile nodig, vandaar de -f ProductReserver/pom.xml.
 
 </details>  
   
@@ -228,19 +248,40 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Cache SonarCloud packages
+      uses: actions/cache@v1
+      with:
+        path: ~/.sonar/cache
+        key: ${{ runner.os }}-sonar
+        restore-keys: ${{ runner.os }}-sonar
+    - name: Cache Maven packages
+      uses: actions/cache@v1
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**ProductReserver/pom.xml') }}
+        restore-keys: ${{ runner.os }}-m2
+    - name: Build and analyze
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=TijndeRooij_ProductReserver2 -f "ProductReserver/pom.xml" 
+  
     - name: Build with Maven
       run: mvn -B package -f ProductReserver/pom.xml
     - name: Start containers
       run: docker-compose -f "ProductReserver/docker-compose.yml" up -d --build
 ```
-De pijplijn wordt getriggerd door een push naar de master branch of een pull request naar de master branch. In de file wordt 1 job gerunt die uit 4 stappen bestaat.
- - De stap "Checkout" gebruikt de actie actions/checkout@v3 om de code in de repository uit te checken. Door dit te doen wordt er uit gecheckt naar de default branch. Dit is "/". Om deze reden heb ik "ProductReserver/" voor iedere file staan die de job moet hebben. 
+De pijplijn wordt getriggerd door een push naar de master branch of een pull request naar de master branch. In de file wordt 1 job gerunt die uit een aantal stappen bestaat.
+ - De stap "Checkout" gebruikt de actie actions/checkout@v3 om de code in de repository uit te checken. Door dit te doen wordt er uit gecheckt naar de default directory. Dit is "/". Om deze reden heb ik "ProductReserver/" voor iedere file staan die de job moet hebben. 
+ - Nu komt er een groot deel wat te maken heeft met sonarCloud kijk bij code analyse.
  - De "Set up JDK 17" stap gebruikt de actions/setup-java@v3 actie om JDK versie 17 in te stellen, hij gebruikt temurin als distributie en maven als cache.
  - De "Build with Maven" stap voert het mvn commando uit om het project te bouwen met behulp van het ProductReserver/pom.xml bestand.
  - De stap "Start containers" start de container door het commando docker-compose -f "ProductReserver/docker-compose.yml" up -d --build uit te voeren. Deze runt de docker-composefile en hiermee ook de dockerfile.
