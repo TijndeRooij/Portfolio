@@ -14,7 +14,7 @@ Dit is mijn portfolio. Hierin laat ik zien dat ik al mijn leerdoelen heb aangeto
         - [Communicatie tussen Front en Backend](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#communicatie-met-backend)
         - [Backend](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#backend)
         - [Database](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#database)
-      - [Software quality]
+      - [Software quality](https://github.com/TijndeRooij/Portfolio/blob/main/IP.md#software-quality)
       - [Agile method *GP*](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#agile-method)
         - [Waterfall](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#waterfall)
         - [Agile](https://github.com/TijndeRooij/Portfolio/blob/main/GP.md#agile)
