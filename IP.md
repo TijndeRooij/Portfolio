@@ -56,6 +56,28 @@ In mijn database staan mijn users, products en rollen opgeslagen. Tussen Users e
   </summary>
 
 ### Software quality
+Voor mijn individueel project heb ik gebruik gemaakt van End to End testing en SonarCloud om mijn code te testen en te analyseren. Ik heb heel lang geprobeert Endpoint testen werkend te krijgen maar dit is mij uiteindelijk niet gelukt. 
+  
+#### Testing
+Voor mijn tests heb ik gebruik gemaakt van End to End testing in cypress. Dit is een goed programma voor End to End testen. Ik heb voordat ik begonnen was aan End to End testing heel lang geprobeert Endpoint testing werkend te krijgen. Dit is mij niet gelukt. Ik heb deze Endpoint testen proberen te maken met Mockito en JUnit 5. Mockito is een handig framework voor het efficiënt schrijven van je tests en het mocken van de repos.
+``` java
+@Test
+public void getAllProductsEndPoint() throws Exception {
+  String sorter = "id";
+
+  when(productRepository.findAll()).thenReturn(Arrays.asList(Product_1, Product_2, Product_3));
+
+  MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get("/{sorter}", sorter))
+              .andExpect(MockMvcResultMatchers.status().isOk())
+              .andExpect(MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON))
+              .andReturn();
+
+  assertEquals(3, mvcResult.getResponse().getContentLength());
+}
+```
+Hierboven staat een van mijn misslukte endpoint tests. Ik probeer hier het ophalen van alle products te testen. Deze producten worden op hun 'id' gesorteerd en dat wordt teruggegeven aan de fontend.<br/>
+Als eerste maakt ik een string aan met de waarde "id", dit is waar de service laag de opgehaalde products op gaat sorteren. Vervolgens mock ik de Repository die de products terug zou moeten geven. Ik mock dit zodat ik niet mijn echte database gebruik om de tests op uit te voeren. De 2e lijn zou zodra de findAll() method wordt aangeroepen een lijst van 3 predefinend products moeten teruggeven. Vervolgens ga ik mijn con
+  
 You use software tooling and methodology that continuously monitors and improve the software quality during software development.
 
 Clarification:
