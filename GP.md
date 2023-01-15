@@ -164,6 +164,8 @@ Om ervoor te zorgen dat er goed nagedacht wordt over de ethiek achter een app ku
 Bronnen:<br/>
 De 6 Cultuurdimensies van Hofstede –. (2022, December 20). Gedragvandeconsument.nl. https://gedragvandeconsument.nl/hofstede-dimensies/<br/>
   
+Dieker, N. (2023, January 15). Softwareontwikkelaars en ethiek in 2023. Cisin.com. https://www.cisin.com/coffee-break/nl/technology/software-developers-and-ethics.html<br />
+  
 Huijbregts, J. (2019, July 18). Google verwijdert zeven apps bedoeld om mensen te volgen uit Play Store. Tweakers. https://tweakers.net/nieuws/155278/google-verwijdert-zeven-apps-bedoeld-om-mensen-te-volgen-uit-play-store.html <br/>
   
 IDI Inventory - Home. (n.d.). https://lms.idiinventory.com/<br/>
@@ -179,6 +181,20 @@ Team, E. (2019, July 31). De vijf cultuurdimensies van Hofstede: voor internatio
   
 <br/>
   
+### Requirements and design
+  
+#### Architectural design
+  
+<img src='https://user-images.githubusercontent.com/113592556/212544073-48b5d3ed-5768-4eb5-b452-5a80574adb26.png' height=400 align='right' />
+Het begint bij een react-native frontend. Wij hebben gekozen voor react-native omdat je hier een IOS en Android applicatie mee kon maken. Het was namelijk een requirement dat de applicatie een mobile app was die op IOS en Android gerunt kon worden. Om werk te besparen hebben wij gekozen om geen gebruik te maken van kotlin (android) en swift (IOS), maar van react-native. <br />
+<br />
+Het 2e deel van onze applicatie is de backend. Wij hebben gekozen om NodeJS te gebruiken omdat onze backend engineers iets anders dan java of C# wilde gebruiken. En omdat NodeJS geen gebruik maakt van OOP leek hun dit een interessante uitdaging. Naast dat NodeJS een leuke uitdaging is, is NodeJS ook een klein framework wat minder geheugen gebruikt dan Java. Ook is heeft dit framework een goede ondersteuning voor AWS, wat we gaan gebruiken. <br />
+<br />
+De database in onze applicatie is een SQL database. Ons eerste idee was om hier MongoDB voor te gebruiken. Dit leek ons een goed idee omdat dit kwa snelheid de beste optie was, maar omdat de data in de verkeerde vorm stond opgeslagen zijn we overgestapt op SQL. <br />
+<br />
+Voor de cloudomgeving hebben we gekozen voor AWS. De keuze ging tussen AWS en Azure. AWS was goedkoper om te gebuiken dan Azure en heeft een betere ondersteuning voor NodeJS. 
+  
+#### Frontend design
 Ik heb voor mijn frontend in mijn individueel project gekozen voor Vue.js. In mijn groepsproject ben ik ook verantwoordelijk geweest voor de frontend. Hier hebben wij gekozen voor React-native. Dit is de mobile versie van React. Onze stappen gingens als volgt:
   
 #### Wireframes 
@@ -210,7 +226,7 @@ Ikzelf vind dit een heel handig design. Het is namelijk heel erg makkelijk om st
 <br /> 
   
 #### Testen 
-De schermen in react-native zijn ook getest door gebruikers. Deze gebruikers zijn groepsleden, buitenstaanders en stakeholders. Doormiddel van deze tests zijn we erachter gekomen dat de designs nog beter konden. Zo kwamen we erachter dat gebruikers graag wilde weten wat andere collega's van jou konden zien. Ook zijn we erachter gekomen dat de My Team cards niet veel gebruikt werden. Met deze observaties hebben we het dasboard een compleet nieuw design gegeven. Nu kan de gebruiker bovenin zijn eigen informatie zien en kan hij makkelijker gebruik maken van de Favorates cards die nu onderin staan.  
+De schermen in react-native zijn ook getest door gebruikers. Deze gebruikers zijn groepsleden, buitenstaanders en stakeholders. Doormiddel van deze tests zijn we erachter gekomen dat de designs nog beter konden. Zo kwamen we erachter dat gebruikers graag wilde weten wat andere collega's van jou konden zien. Ook zijn we erachter gekomen dat de My Team cards niet veel gebruikt werden. Met deze observaties hebben we het dasboard een compleet nieuw design gegeven. Nu kan de gebruiker bovenin zijn eigen informatie zien en kan hij makkelijker gebruik maken van de Favorates cards die nu onderin staan.
   
 </details>
   
