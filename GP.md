@@ -130,7 +130,8 @@ Time Orientation gaat over de manier hoe een samenleving omgaat met tradities, n
 Indulgence gaat over de terughoudendheid van verlangen en impulsen. Als een land hier laag op scoort is dat land vaak positiever en is de werk animo vaak lager. De mensen in dit land doen wat ze willen en geven geld uit wanneer ze dit willen. Ook zijn ze vaak optimistisch ingesteld. Als een land hier hoog op scoort heeft dit land vaak strikte normen en wordt de bevrediging van behoeftes onderdrukt.
 
 #### Eigen ervaring
-
+Ikzelf heb een voorbeeld van power distance. De power distance bij mij op het werk bijvoorbeeld is niet heel hoog. Ondanks dat het niet heel laag is het ook zeker niet hoog. Dat mensen een machtsverschil niet accepteren valt mij vooral op als mensen zelf een beetje macht krijgen. Neem als voorbeeld iemand die er net werkt. Hij accepteert dat er mensen zijn die zeggen wat hij gaat doen. Hij krijgt te horen wat hij moet gaan doen van zijn leider op die avond en zonder te klagen begint hij hieraan. Zodra hij zelf een leider wordt krijt hij meer macht. Hij gaat dan bepalen wat mensen gaan doen. Nou is het mogelijk voor een leider om ingepland te worden als een normale werker. Zodra dit gebeurt vinden mensen al snel dat ze nog steeds over dingen mogen beslissen terwijl dit niet het geval is. Er is hier dan ook geen acceptatie voor dat iemand anders beslist. Dit zorgt voor een lagere power distance. <br />
+Dus zodra iemand zelf wat macht krijgt op bepaalde avonden vindt hij snel dat hij dit iedere avond heeft terwijl dit vaak niet zo is.
   
 ### Ethics
 Het onderdeel ethics wil ik aantonen door over het ethisch aspect van ons groepsproject te gaan. We maken namelijk een app om te zien waar een collega zichzelf bevindt. Dit doen wij door middel van WiFi data. Deze data wordt een keer per kwartier naar ons gestuurd. Hierdoor kunnen we zien of een werknemer thuis, op kantoor aan het werk is. Als een werknemer op kantoor is kunnen we ook zien op welke verdieping hij zich bevindt. <br />
@@ -147,17 +148,17 @@ Om het ethisch aspect van de app beter te maken zijn er wel bepaalde dingen die 
 Naast het volgen van mensen komen er bij het maken van ethisch verantwoorde software nog meer dingen kijken. Hieronder heb ik er een aantal opgenoemd:
 
 #### Logbestanden
-Een logbestand is een bestand waarin geformuleert staat wat een gebuiker allenmaal doet. Een logbestand van een website bijvoorbeeld, houdt bij wat een gebruiker allenmaal doet op deze website. Zo heeft facebook enorme logbestanden met gebuikersinformatie van zijn gebruikers. De ethische uitdaging die hierbij komt kijken is: 'Hoelang mag je deze logbestanden bewaren en hoe ethisch is dit'. Want als er in een logbestand gevoelige gebruikers informatie staat, hoelang mag dit dan bewaart blijven.
+Een logbestand is een bestand waarin geformuleerd staat wat een gebruiker allenmaal doet. Een logbestand van een website bijvoorbeeld, houdt bij wat een gebruiker allenmaal doet op deze website. Zo heeft facebook enorme logbestanden met gebruikersinformatie van zijn gebruikers. De ethische uitdaging die hierbij komt kijken is: 'Hoelang mag je deze logbestanden bewaren en hoe ethisch is dit'. Want als er in een logbestand gevoelige gebruikers informatie staat, hoelang mag dit dan bewaart blijven.
 
 #### Gebruiksinformatie beveiligen
-Het beveiligen van gebruikersinformatie spreekt voor zich. Als ik weet dat een bepaalde app die ik wil gaan gebruiken mijn informatie niet beveiligt ga ik die app niet gebruiken. Maar als het wel beveiligt wordt, hoe veilig staat het dan. Want hackers zullen er misschien moeilijk bijkomen, maar als de overheid om mijn gegevens vraagt wordt dit dan meteen gegeven? En hoe etisch is het om mijn informatie te delen zonder dat ik dat weet?
+Het beveiligen van gebruikersinformatie spreekt voor zich. Als ik weet dat een bepaalde app die ik wil gaan gebruiken mijn informatie niet beveiligd ga ik die app niet gebruiken. Maar als het wel beveiligt wordt, hoe veilig staat het dan. Want hackers zullen er misschien moeilijk bijkomen, maar als de overheid om mijn gegevens vraagt wordt dit dan meteen gegeven? En hoe ethisch is het om mijn informatie te delen zonder dat ik dat weet?
 
 #### Intenties
-De meeste gebuikers van jouw app zullen jouw app met goede intenties gebruiken, maar wat gebeurt er als een gebruiker jouw app met slechte intenties gebruikt. Zou hij hiermee dan mensen kwaat kunnen doen? En hoe ethisch is het om een app te maken waar mensen andere mensen kwaat mee kunnen doen.
+De meeste gebruikers van jouw app zullen jouw app met goede intenties gebruiken, maar wat gebeurt er als een gebruiker jouw app met slechte intenties gebruikt. Zou hij hiermee dan mensen kwaad kunnen doen? En hoe ethisch is het om een app te maken waar mensen andere mensen kwaad mee kunnen doen.
 
 #### Oplossingen
-Om ervoor te zorgen dat er goed nagedacht wordt over de ethiek achter een app kun je als software engineer ervoor zorgen dat jouw app voldoet aan een aantal standpunten. Deze staan hieronder genoemt:
-- Software engineers dienen te handelen vanuit hun klant of werkever en hiermee de publieke belangen volgen.
+Om ervoor te zorgen dat er goed nagedacht wordt over de ethiek achter een app kun je als software engineer ervoor zorgen dat jouw app voldoet aan een aantal standpunten. Deze staan hieronder genoemd:
+- Software engineers dienen te handelen vanuit hun klant of werkgever en hiermee de publieke belangen volgen.
 - Software engineers zorgen dat hun producten aan de hoogste professionele normen voldoen.
 - Software engineers zullen actief betrokken zijn bij het leren over het beoefenen en promoten bij een ethische benadering van hun beroep.
 
@@ -186,13 +187,13 @@ Team, E. (2019, July 31). De vijf cultuurdimensies van Hofstede: voor internatio
 #### Architectural design
   
 <img src='https://user-images.githubusercontent.com/113592556/212544073-48b5d3ed-5768-4eb5-b452-5a80574adb26.png' height=400 align='right' />
-Het begint bij een react-native frontend. Wij hebben gekozen voor react-native omdat je hier een IOS en Android applicatie mee kon maken. Het was namelijk een requirement dat de applicatie een mobile app was die op IOS en Android gerunt kon worden. Om werk te besparen hebben wij gekozen om geen gebruik te maken van kotlin (android) en swift (IOS), maar van react-native. <br />
+Het begint bij een react-native frontend. Wij hebben gekozen voor react-native omdat je hier een IOS en Androidapplicatie mee kon maken. Het was namelijk een requirement dat de applicatie een mobile app was die op IOS en Android gerund kon worden. Om werk te besparen hebben wij gekozen om geen gebruik te maken van kotlin (Android) en Swift (IOS), maar van react-native. <br />
 <br />
-Het 2e deel van onze applicatie is de backend. Wij hebben gekozen om NodeJS te gebruiken omdat onze backend engineers iets anders dan java of C# wilde gebruiken. En omdat NodeJS geen gebruik maakt van OOP leek hun dit een interessante uitdaging. Naast dat NodeJS een leuke uitdaging is, is NodeJS ook een klein framework wat minder geheugen gebruikt dan Java. Ook is heeft dit framework een goede ondersteuning voor AWS, wat we gaan gebruiken. <br />
+Het 2e deel van onze applicatie is de backend. Wij hebben gekozen om NodeJS te gebruiken omdat onze backend engineers iets anders dan Java of C# wilde gebruiken. En omdat NodeJS geen gebruik maakt van OOP leek hun dit een interessante uitdaging. Naast dat NodeJS een leuke uitdaging is, is NodeJS ook een klein framework wat minder geheugen gebruikt dan Java. Ook is heeft dit framework een goede ondersteuning voor AWS, wat we gaan gebruiken. <br />
 <br />
-De database in onze applicatie is een SQL database. Ons eerste idee was om hier MongoDB voor te gebruiken. Dit leek ons een goed idee omdat dit kwa snelheid de beste optie was, maar omdat de data in de verkeerde vorm stond opgeslagen zijn we overgestapt op SQL. <br />
+De database in onze applicatie is een SQL-database. Ons eerste idee was om hier MongoDB voor te gebruiken. Dit leek ons een goed idee omdat dit qua snelheid de beste optie was, maar omdat de data in de verkeerde vorm stond opgeslagen zijn we overgestapt op SQL. <br />
 <br />
-Voor de cloudomgeving hebben we gekozen voor AWS. De keuze ging tussen AWS en Azure. AWS was goedkoper om te gebuiken dan Azure en heeft een betere ondersteuning voor NodeJS. 
+Voor de cloudomgeving hebben we gekozen voor AWS. De keuze ging tussen AWS en Azure. AWS was goedkoper om te gebruiken dan Azure en heeft een betere ondersteuning voor NodeJS. 
   
 #### Frontend design
 Ik heb voor mijn frontend in mijn individueel project gekozen voor Vue.js. In mijn groepsproject ben ik ook verantwoordelijk geweest voor de frontend. Hier hebben wij gekozen voor React-native. Dit is de mobile versie van React. Onze stappen gingens als volgt:
