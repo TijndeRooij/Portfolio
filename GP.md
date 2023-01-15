@@ -93,7 +93,7 @@ Scott, J. (2018, August 20). Waterfall, Agile or Hybrid - What Development Metho
   </summary>
   
 ### Cultural differences
-
+#### IDI
 Ik heb een IDI afgelegd om mijn gedachten over cultuur verschillen te zien. Hier kwam uit dat ik zelf het gevoel heb dat ik goed kan omgaan met culturele verschillen en dat ik me in beide schoenen kan plaatsen omdat ik gemakkelijk overeenkomsten zie.
 ![image](https://user-images.githubusercontent.com/113592556/206206874-ec00972a-860a-441c-a7dd-b092b06ba64b.png)
 
@@ -107,17 +107,6 @@ Omdat mijn PO hoger is dan mijn DO overschat ik mezelf in hoe ik mij aanpas in a
 Ik heb in mijn IDI ook een test gemaakt over dit onderwerp. Hier werd ik bekend gemaakt met de verschillen tussen PO en DO en waarom dit zo is. Ik heb op deze test een score gehaald van 83%.
 
 ![image](https://user-images.githubusercontent.com/113592556/206204689-9afc2ebe-3d4d-4f11-a8a4-0e3dfeae8ea6.png)
-  
-### Ethics
-Het onderdeel ethics wil ik aantonen door over het ethisch aspect van ons groepsproject te gaan. We maken namelijk een app om te zien waar een collega zichzelf bevindt. Dit doen wij door middel van WiFi data. Deze data wordt een keer per kwartier naar ons gestuurd. Hierdoor kunnen we zien of een werknemer thuis, op kantoor aan het werk is. Als een werknemer op kantoor is kunnen we ook zien op welke verdieping hij zich bevindt. <br />
-
-#### Onze app
-Ikzelf vind de ethiek achter een tracker app niet heel goed. Goede voorbeelden hiervan zijn deze apps: Spy Tracker, SMS Tracker, Phone Cell Tracker, Spy Kids Tracker en Employee Work Spy. Deze 7 apps waren bedoeld om kinderen, werknemers of partners te volgen. Zolang de app op de telefoon van de gezochte persoon geïnstalleerd was konden je werkgevers, ouders of partner zien waar u zich bevond. Toen google play hierachter kwam werden deze apps meteen verwijdert van de playstore. Deze apps gaven ook instructie om de installatie van deze apps te verbergen zodat het slachtoffer niks doorhad. <br />
-Nou gaat het voorbeeld hierboven wel heel ver. Wij vragen namelijk aan de gebruiker of wij zijn WiFi data mogen uitlezen. Dit wordt 1 keer in de 12 uur opnieuw gedaan. Ook als de gebruiker op nee drukt kan de gebruiker de app gewoon normaal gebruiken maar wordt zijn data niet gebruikt. Zijn data wordt wel (ook als er op nee gedrukt wordt) doorgegeven met de rest van de WiFi data. Deze data komt ook in de backend. Hier wordt er pas gekeken wat de voorkeur was. Dit laatste verandert het ethisch aspect drastisch voor mij. Want ook als de gebruiker op nee drukt wordt hij dus wel gevolgd. <br />
-Om het ethisch aspect van de app beter te maken zijn er wel bepaalde dingen die de werkgever kan doen. 
-- De werkgever zou de app goed kunnen uitleggen en daarmee ook uitleggen dat je de keuze altijd kan aanpassen. 
-- De werkgever zou het installeren van de app niet verplicht hoeven te maken.
-- Er zou in een later stadium van de ontwikkeling van de app een optie kunnen komen om zelf handmatig jouw status aan te passen.
 
 #### Culturele dimensies van Hofstede
 De 6 culturele dimensies van Hofstede zijn bedacht door Geert Hofstede en vertegenwoordigen de keuzes van landen die ze onderscheiden van andere landen. De zes dimensies van hofstede zijn: Power distance, Individualism, Masculinity, Uncertainty Avoidance, Time Orientation, Indulgence.
@@ -139,6 +128,38 @@ Time Orientation gaat over de manier hoe een samenleving omgaat met tradities, n
 
 #### Indulgence
 Indulgence gaat over de terughoudendheid van verlangen en impulsen. Als een land hier laag op scoort is dat land vaak positiever en is de werk animo vaak lager. De mensen in dit land doen wat ze willen en geven geld uit wanneer ze dit willen. Ook zijn ze vaak optimistisch ingesteld. Als een land hier hoog op scoort heeft dit land vaak strikte normen en wordt de bevrediging van behoeftes onderdrukt.
+
+#### Eigen ervaring
+
+  
+### Ethics
+Het onderdeel ethics wil ik aantonen door over het ethisch aspect van ons groepsproject te gaan. We maken namelijk een app om te zien waar een collega zichzelf bevindt. Dit doen wij door middel van WiFi data. Deze data wordt een keer per kwartier naar ons gestuurd. Hierdoor kunnen we zien of een werknemer thuis, op kantoor aan het werk is. Als een werknemer op kantoor is kunnen we ook zien op welke verdieping hij zich bevindt. <br />
+
+#### Onze app
+Ikzelf vind de ethiek achter een tracker app niet heel goed. Goede voorbeelden hiervan zijn deze apps: Spy Tracker, SMS Tracker, Phone Cell Tracker, Spy Kids Tracker en Employee Work Spy. Deze 7 apps waren bedoeld om kinderen, werknemers of partners te volgen. Zolang de app op de telefoon van de gezochte persoon geïnstalleerd was konden je werkgevers, ouders of partner zien waar u zich bevond. Toen google play hierachter kwam werden deze apps meteen verwijdert van de playstore. Deze apps gaven ook instructie om de installatie van deze apps te verbergen zodat het slachtoffer niks doorhad. <br />
+Nou gaat het voorbeeld hierboven wel heel ver. Wij vragen namelijk aan de gebruiker of wij zijn WiFi data mogen uitlezen. Dit wordt 1 keer in de 12 uur opnieuw gedaan. Ook als de gebruiker op nee drukt kan de gebruiker de app gewoon normaal gebruiken maar wordt zijn data niet gebruikt. Zijn data wordt wel (ook als er op nee gedrukt wordt) doorgegeven met de rest van de WiFi data. Deze data komt ook in de backend. Hier wordt er pas gekeken wat de voorkeur was. Dit laatste verandert het ethisch aspect drastisch voor mij. Want ook als de gebruiker op nee drukt wordt hij dus wel gevolgd. <br />
+Om het ethisch aspect van de app beter te maken zijn er wel bepaalde dingen die de werkgever kan doen. 
+- De werkgever zou de app goed kunnen uitleggen en daarmee ook uitleggen dat je de keuze altijd kan aanpassen. 
+- De werkgever zou het installeren van de app niet verplicht hoeven te maken.
+- Er zou in een later stadium van de ontwikkeling van de app een optie kunnen komen om zelf handmatig jouw status aan te passen.
+
+#### Ethische uitdagingen als Software engineer
+Naast het volgen van mensen komen er bij het maken van ethisch verantwoorde software nog meer dingen kijken. Hieronder heb ik er een aantal opgenoemd:
+
+#### Logbestanden
+Een logbestand is een bestand waarin geformuleert staat wat een gebuiker allenmaal doet. Een logbestand van een website bijvoorbeeld, houdt bij wat een gebruiker allenmaal doet op deze website. Zo heeft facebook enorme logbestanden met gebuikersinformatie van zijn gebruikers. De ethische uitdaging die hierbij komt kijken is: 'Hoelang mag je deze logbestanden bewaren en hoe ethisch is dit'. Want als er in een logbestand gevoelige gebruikers informatie staat, hoelang mag dit dan bewaart blijven.
+
+#### Gebruiksinformatie beveiligen
+Het beveiligen van gebruikersinformatie spreekt voor zich. Als ik weet dat een bepaalde app die ik wil gaan gebruiken mijn informatie niet beveiligt ga ik die app niet gebruiken. Maar als het wel beveiligt wordt, hoe veilig staat het dan. Want hackers zullen er misschien moeilijk bijkomen, maar als de overheid om mijn gegevens vraagt wordt dit dan meteen gegeven? En hoe etisch is het om mijn informatie te delen zonder dat ik dat weet?
+
+#### Intenties
+De meeste gebuikers van jouw app zullen jouw app met goede intenties gebruiken, maar wat gebeurt er als een gebruiker jouw app met slechte intenties gebruikt. Zou hij hiermee dan mensen kwaat kunnen doen? En hoe ethisch is het om een app te maken waar mensen andere mensen kwaat mee kunnen doen.
+
+#### Oplossingen
+Om ervoor te zorgen dat er goed nagedacht wordt over de ethiek achter een app kun je als software engineer ervoor zorgen dat jouw app voldoet aan een aantal standpunten. Deze staan hieronder genoemt:
+- Software engineers dienen te handelen vanuit hun klant of werkever en hiermee de publieke belangen volgen.
+- Software engineers zorgen dat hun producten aan de hoogste professionele normen voldoen.
+- Software engineers zullen actief betrokken zijn bij het leren over het beoefenen en promoten bij een ethische benadering van hun beroep.
 
 Bronnen:<br/>
 De 6 Cultuurdimensies van Hofstede –. (2022, December 20). Gedragvandeconsument.nl. https://gedragvandeconsument.nl/hofstede-dimensies/<br/>
