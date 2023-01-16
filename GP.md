@@ -227,7 +227,16 @@ Ikzelf vind dit een heel handig design. Het is namelijk heel erg makkelijk om st
 <br /> 
   
 #### Testen 
-De schermen in react-native zijn ook getest door gebruikers. Deze gebruikers zijn groepsleden, buitenstaanders en stakeholders. Doormiddel van deze tests zijn we erachter gekomen dat de designs nog beter konden. Zo kwamen we erachter dat gebruikers graag wilde weten wat andere collega's van jou konden zien. Ook zijn we erachter gekomen dat de My Team cards niet veel gebruikt werden. Met deze observaties hebben we het dasboard een compleet nieuw design gegeven. Nu kan de gebruiker bovenin zijn eigen informatie zien en kan hij makkelijker gebruik maken van de Favorates cards die nu onderin staan.
+De schermen in react-native zijn ook getest door gebruikers. Deze gebruikers zijn groepsleden, buitenstaanders en stakeholders. Doormiddel van deze tests zijn we erachter gekomen dat de designs nog beter konden. Zo kwamen we erachter dat gebruikers graag wilde weten wat andere collega's van jouw konden zien. Ook zijn we erachter gekomen dat de My Team cards niet veel gebruikt werden. Met deze observaties hebben we het dasboard een compleet nieuw design gegeven. Nu kan de gebruiker bovenin zijn eigen informatie zien en kan hij makkelijker gebruik maken van de Favorates cards die nu onderin staan. <br />
+<br />
+Voor mijn individueel project heb ik ook 2 usability tests gedaan. Deze zien er als volgt uit: <br/>
+| Usability test 1 | Usability test 2 |
+| --- | --- |
+| <img src='https://user-images.githubusercontent.com/113592556/212645780-8bdf7640-ec02-43b1-8974-d307d29c2d07.png' height=400 align='left' />|<img src='https://user-images.githubusercontent.com/113592556/212646448-834b48e1-1abf-45b8-93f1-27f076e852fa.png' height=400 align='right' />
+<br />
+Hierboven staan mijn 2 usability tests die ik heb gedaan. De linker is een test om mijn edit te testen. Hier kwam uit dat ik bij het zoeken niet moet checken op hoofdletters. Bij de 2e usability test heb ik getest of het duidelijk was hoe je products kan gebruiken. Dit ging zonder hulp en is dus duidelijk.
+
+
   
 </details>
   
