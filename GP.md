@@ -155,12 +155,23 @@ Het beveiligen van gebruikersinformatie spreekt voor zich. Als ik weet dat een b
 
 #### Intenties
 De meeste gebruikers van jouw app zullen jouw app met goede intenties gebruiken, maar wat gebeurt er als een gebruiker jouw app met slechte intenties gebruikt. Zou hij hiermee dan mensen kwaad kunnen doen? En hoe ethisch is het om een app te maken waar mensen andere mensen kwaad mee kunnen doen.
+  
+#### Uitsluiting
+Het is mogelijk dat gebuikers die jouw applicatie gaan gebruiken een beperking hebben. Zo kunnen ze slechtziend zijn, snappen ze de technologie niet en nog veel meer. Door hier niet op te letten kan het zijn dat je een grote groep uitsluit. Nou heb ik uitgelecht in mijn onderzoek over UI/UX dat je ten alle tijden je doelgroep in gedachten moet houden. En ookal is dit zeker waar, kun je al snel grote groepen uitsluiten en hou ethisch is dat.
+  
+#### Manipulatie
+Als software developer kan je heel goed gebruik maken van ontwerptrucjes. Zo kan je bijvoorbeeld een grafiek laten zien die net wat minder nauwkeurig is dan verwacht wordt door de gebruiker. Op deze manier kun je als developer heel gemakkelijk mensen manipuleren. Dit is niet altijd slecht, zo kun je manipulatie inzetten door mensen een actie te laten uitvoeren die hij/zij ook wil uitvoeren. Maar het kan ook op een slechte manier worden ingezet. En hoever kun je hiermee gaan?
+  
+#### Mensenrechten
+Het is ook heel belangrijk dat een software developer let op relevante wet- en regelgeving. De developer moet er namelijk goed op letten dat hij met zijn app: niet discrimineert, zelfbeschikking respecteert en een eerlijk proces garandeert.
 
+  
 #### Oplossingen
 Om ervoor te zorgen dat er goed nagedacht wordt over de ethiek achter een app kun je als software engineer ervoor zorgen dat jouw app voldoet aan een aantal standpunten. Deze staan hieronder genoemd:
 - Software engineers dienen te handelen vanuit hun klant of werkgever en hiermee de publieke belangen volgen.
 - Software engineers zorgen dat hun producten aan de hoogste professionele normen voldoen.
 - Software engineers zullen actief betrokken zijn bij het leren over het beoefenen en promoten bij een ethische benadering van hun beroep.
+- Software engineers zullen de kwaliteit van hun data, algoritmes en analyses een hoge prioriteit geven.
 
 Bronnen:<br/>
 De 6 Cultuurdimensies van Hofstede –. (2022, December 20). Gedragvandeconsument.nl. https://gedragvandeconsument.nl/hofstede-dimensies/<br/>
