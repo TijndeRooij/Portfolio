@@ -163,8 +163,10 @@ Het is mogelijk dat gebuikers die jouw applicatie gaan gebruiken een beperking h
 Als software developer kan je heel goed gebruik maken van ontwerptrucjes. Zo kan je bijvoorbeeld een grafiek laten zien die net wat minder nauwkeurig is dan verwacht wordt door de gebruiker. Op deze manier kun je als developer heel gemakkelijk mensen manipuleren. Dit is niet altijd slecht, zo kun je manipulatie inzetten door mensen een actie te laten uitvoeren die hij/zij ook wil uitvoeren. Maar het kan ook op een slechte manier worden ingezet. En hoever kun je hiermee gaan?
   
 #### Mensenrechten
-Het is ook heel belangrijk dat een software developer let op relevante wet- en regelgeving. De developer moet er namelijk goed op letten dat hij met zijn app: niet discrimineert, zelfbeschikking respecteert en een eerlijk proces garandeert.
-
+Het is ook heel belangrijk dat een software developer let op relevante wet- en regelgeving. De developer moet er namelijk goed op letten dat hij met zijn app: niet discrimineert, zelfbeschikking respecteert en een eerlijk proces garandeert. Dit sluit goed aan op het volgende dilemma: verantwoordelijkheid. 
+  
+#### Verantwoordelijkheid
+Een van de belangrijkste dilemma's is het verantwoordelijkheids dilemma. Het is namelijk belangerijk dat er iemand verandwoordelijk is voor bijvoorbeeld een AI-systeem. Dit wordt gedaan zodat als er een van de bovenstaande dilemma's mis gaat er iemand verantwoordelijk gesteld kan worden. Om deze reden is het belangrijk dat een software developer achter zijn eigen project staat. Zodat hij/zij verantwoordelijk gesteld kan worden.
   
 #### Oplossingen
 Om ervoor te zorgen dat er goed nagedacht wordt over de ethiek achter een app kun je als software engineer ervoor zorgen dat jouw app voldoet aan een aantal standpunten. Deze staan hieronder genoemd:
@@ -172,6 +174,7 @@ Om ervoor te zorgen dat er goed nagedacht wordt over de ethiek achter een app ku
 - Software engineers zorgen dat hun producten aan de hoogste professionele normen voldoen.
 - Software engineers zullen actief betrokken zijn bij het leren over het beoefenen en promoten bij een ethische benadering van hun beroep.
 - Software engineers zullen de kwaliteit van hun data, algoritmes en analyses een hoge prioriteit geven.
+- Software engineers staan in alle tijden achter hun eigen project en zijn bereid er verandwoording over te nemen.
 
 Bronnen:<br/>
 De 6 Cultuurdimensies van Hofstede –. (2022, December 20). Gedragvandeconsument.nl. https://gedragvandeconsument.nl/hofstede-dimensies/<br/>
@@ -181,6 +184,12 @@ Dieker, N. (2023, January 15). Softwareontwikkelaars en ethiek in 2023. Cisin.co
 Huijbregts, J. (2019, July 18). Google verwijdert zeven apps bedoeld om mensen te volgen uit Play Store. Tweakers. https://tweakers.net/nieuws/155278/google-verwijdert-zeven-apps-bedoeld-om-mensen-te-volgen-uit-play-store.html <br/>
   
 IDI Inventory - Home. (n.d.). https://lms.idiinventory.com/<br/>
+  
+Kenniscentrum Data & Maatschappij. (2020, December). ETHISCHE PRINCIPES EN (NIET-)BESTAANDE JURIDISCHE REGELS VOOR AI. Retrieved January 16, 2023, from https://data-en-maatschappij.ai/uploads/publications/20201112_Rapport-Ethische-richtsnoeren_v1_2020-12-07-151030.pdf <br />
+  
+Lange, A. (2023, January 16). De ethische design dilemma’s waar wij als ontwerpers mee te maken hebben. Level Level. Retrieved January 16, 2023, from https://level-level.com/nl/blog/ethische-dilemmas-voor-ontwerpers/<br />
+  
+Principes voor ethisch verantwoord innoveren. (n.d.). PIANOo - Expertisecentrum Aanbesteden. https://www.pianoo.nl/nl/themas/innovatiegericht-inkopen/achtergrondinformatie/principes-voor-ethisch-verantwoord-innoveren<br />
   
 Team, E. (2019, July 31). De vijf cultuurdimensies van Hofstede: voor internationale merken. EURIB. https://www.eurib.net/de-vijf-cultuurdimensies-van-hofstede/
   
