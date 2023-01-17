@@ -266,14 +266,9 @@ Hierboven staan mijn 2 usability tests die ik heb gedaan. De linker is een test 
 </details>
   
 ## Professional
-You act in a professional manner during software development and learning.
+Voor dit leerdoel heb ik het gehele semester mijn feedpulse bijgehouden en alle feedback zo goed mogelijk proberen te implementeren. De feedback ging vooral over de code. Maar een feedback punt wat veel terug kwam en wat ik ook zeker mee ga nemen in de volgende semesters is de feedback over meer met de docent spreken. Zo was mijn eerste onderzoeksvraag niet helemaal goed en als ik eerder met de docent gesproken had, had ik dit kunnen weten. Hetzelfde geld voor mijn testen en CI/CD. Hieronder staat mijn feedpulse als pdf. <br />
+[FeedPulse.pdf](https://github.com/TijndeRooij/Portfolio/files/10436604/FeedPulse.pdf)<br />
 
-Clarification:
-Professional manner: 
-
-You develop software as a team effort according to a prescribed software methodology and following team agreements. You are able to track your work progress and communicate your progress with the team.
-
-You actively ask and apply feedback from stakeholders and advise them on the most optimal technical and design (architectural) solutions.
-You choose and substantiate solutions for a given problem.
-
-
+### Reflectie
+Ik heb dit semester heel veel geleerd. Zo heb ik nieuwe talen als Java geleerd. Ook heb ik met veel verschillende frameworks gewerkt zoals Vue.js. Zelf vond ik mijn Groepsproject het leukste omdat ik hier ook met iets compleet anders bezig was dan met mijn Individueel project. Ik ben uiteindelijk ook heel trots op wat wij als groep voor elkaar hebben gekregen. Ook ben ik trots op mijn CI/CD. Hier heb ik namelijk heel veel tijd aan besteed, maar ben wel doorgegaan en dit heeft uiteindelijk goed uitgepakt.<br />
+Op professionele wijze heb ik ook veel geleert. Zo weet ik nu dat ik meer feedback moet vragen aan mijn docent, ook als ik niks heb. Dit pakt namelijk altijd goed uit en zorgt ervoor dat ik niet weer lang vastloop op een klein deel van een leerdoel.
