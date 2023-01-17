@@ -214,8 +214,10 @@ Het 2e deel van onze applicatie is de backend. Wij hebben gekozen om NodeJS te g
 De database in onze applicatie is een SQL-database. Ons eerste idee was om hier MongoDB voor te gebruiken. Dit leek ons een goed idee omdat dit qua snelheid de beste optie was, maar omdat de data in de verkeerde vorm stond opgeslagen zijn we overgestapt op SQL. <br />
 <br />
 Voor de cloudomgeving hebben we gekozen voor AWS. De keuze ging tussen AWS en Azure. AWS was goedkoper om te gebruiken dan Azure en heeft een betere ondersteuning voor NodeJS. 
-  
-![image](https://user-images.githubusercontent.com/113592556/212771199-35ab0ffa-71b2-4bd0-9c0e-ad881ffc925e.png)
+
+<br />
+
+![image](https://user-images.githubusercontent.com/113592556/212771199-35ab0ffa-71b2-4bd0-9c0e-ad881ffc925e.png) <br />
 Ook heb ik een C4 model gemaakt voor mijn applicatie.
   
 #### Frontend design
