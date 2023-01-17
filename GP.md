@@ -218,7 +218,7 @@ Voor de cloudomgeving hebben we gekozen voor AWS. De keuze ging tussen AWS en Az
 <br />
 
 ![image](https://user-images.githubusercontent.com/113592556/212771199-35ab0ffa-71b2-4bd0-9c0e-ad881ffc925e.png) <br />
-Ook heb ik een C4 model gemaakt voor mijn applicatie.
+Ook heb ik een C4 model gemaakt voor mijn applicatie. Dit is het model van mijn persoonlijk project.
   
 #### Frontend design
 Ik heb voor mijn frontend in mijn individueel project gekozen voor Vue.js. In mijn groepsproject ben ik ook verantwoordelijk geweest voor de frontend. Hier hebben wij gekozen voor React-native. Dit is de mobile versie van React. Onze stappen gingens als volgt:
